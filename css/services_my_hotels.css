@@ -1,0 +1,184 @@
+.services-place,
+.services-breakfast,
+.services-language,
+.services-convenient {
+  padding: 38px 88px 56px 55px;
+  margin-bottom: 30px;
+}
+.services-convenient {
+  padding: 34px 23px 56px 55px;
+  margin-bottom: 30px;
+}
+.services-title h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000d08;
+  line-height: 32px;
+  margin-bottom: 18px;
+}
+.services-title p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000d08;
+  line-height: 33px;
+}
+.services-place h4,
+.services-breakfast h4,
+.services-language h4,
+.services-convenient h4 {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #000d08;
+  margin-bottom: 15px;
+}
+.services-place q,
+.services-language q,
+.services-convenient q {
+  font-size: 14px;
+  line-height: 19px;
+  color: #bdbdbd;
+  margin-bottom: 30px;
+  display: block;
+}
+.services-note {
+  background-color: #f4f8fe;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+.services-note p {
+  font-size: 14px;
+  line-height: 32px;
+  color: #000d08;
+}
+.services-place select#cars,
+.services-breakfast select#cars,
+.services-language select#cars {
+  width: 414px;
+  height: 41px;
+}
+.icon-language i.fas.fa-plus-circle.float-left {
+  font-size: 20px;
+  padding-right: 11px;
+  color: #488bf8;
+}
+.icon-language p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #488bf8;
+  line-height: 19px;
+}
+
+.services-footer button {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 100px;
+  width: 100%;
+  height: 58px;
+}
+@media only screen and (max-width: 1024px) {
+  .services-title h4,
+  .services-title p {
+    margin-bottom: 0px;
+  }
+  .services-place,
+  .services-breakfast,
+  .services-language,
+  .services-convenient {
+    padding: 29px 36px 34px 34px;
+    margin-bottom: 26px;
+  }
+  .services-place h4,
+  .services-breakfast h4,
+  .services-language h4,
+  .services-convenient h4 {
+    font-size: 19px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #000d08;
+    margin-bottom: 12px;
+  }
+  .services-place q,
+  .services-language q,
+  .services-convenient q {
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .services-place p,
+  .services-breakfast p {
+    font-size: 14px;
+  }
+  .option-servi select#cars {
+    font-size: 14px;
+  }
+  .services-convenient.bg-white {
+    padding: 20px 31px;
+  }
+  .services-note p {
+    font-size: 14px;
+    line-height: 29px;
+    color: #000d08;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .services-title h4 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #000d08;
+    line-height: 13px;
+    margin-bottom: 18px;
+  }
+  .services-title p {
+    line-height: 18px;
+    font-size: 12px;
+  }
+  .services-place select#cars,
+  .services-breakfast select#cars,
+  .services-language select#cars {
+    width: 100%;
+    height: 39px;
+  }
+  .services-place,
+  .services-breakfast,
+  .services-language,
+  .services-convenient {
+    padding: 20px;
+  }
+  .services-place q,
+  .services-language q,
+  .services-convenient q {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  label.custom-control-label {
+    font-size: 12px;
+  }
+  form.needs-validation .wp-utility {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-place p,
+  .services-breakfast p {
+    font-size: 14px;
+  }
+  .services-note p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .services-place p,
+  .services-breakfast p {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .services-place h4,
+  .services-breakfast h4,
+  .services-language h4,
+  .services-convenient h4 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}

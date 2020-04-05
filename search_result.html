@@ -1,0 +1,1755 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+		integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/tablets.css" />
+	<link rel="stylesheet" href="./css/mobile.css" />
+	<link rel="icon" href="logo.ico" type="image/x-icon" />
+	<title>Ket qua tim kiem | Trang chinh</title>
+</head>
+
+<body>
+	<!-- header -->
+	<!-- main header menu -->
+	<header id="main-header" class="bg-header">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg">
+				<a class="navbar-brand" href="index.html">
+					<img src="./img/logo.png" alt="Main logo" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-bars fa-2x text-white"></i>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="khach-san-chi-tiet.html">Giới thiệu</a>
+						</li>
+						<li class="nav-item">
+							<a href="news_main.html" class="nav-link">
+								Tin tức
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="endow.html" class="nav-link">
+								Khuyến mại
+							</a>
+						</li>
+						<li>
+							<a href="search_result.html" class="nav-link">Liên hệ</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-globe"></i> Vietnamese
+							</a>
+							<div class="dropdown-menu bg-header" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Tiếng Anh</a>
+								<a class="dropdown-item" href="#">Tiếng Việt</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Ngôn ngữ khác</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="sign-in.html" class="nav-link"><i class="fas fa-users"></i> Đăng nhập</a>
+						</li>
+						<li class="nav-item">
+							<a href="sign-up.html" class="nav-link"><i class="fas fa-user-plus"></i> Đăng ký</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- SHOW CASE -->
+	<section id="showcase">
+		<div class="overlay">
+			<div class="container-fluid text-center">
+				<h1 class="mt-4">
+					CHUỖI KHÁCH SẠN NHƯỢNG QUYỀN HÀNG ĐẦU VIỆT NAM
+				</h1>
+				<p>
+					Hơn +10000 phòng khách sạn 5 sao chuẩn quốc tế
+				</p>
+				<!-- search bar -->
+				<div class="container">
+					<div class="search-bar">
+						<form class="row">
+							<div class="hide-star">
+								<input type="text" class="extra-small" id="place" placeholder="Nơi bạn muốn đến" />
+							</div>
+
+							<!-- time picker -->
+							<div class="hide-star">
+								<input type="text" name="daterange" style="cursor: pointer;" id="time-picker" class="time-picker"
+									placeholder="Ngày nhận phòng" />
+							</div>
+
+							<!-- amount picker -->
+							<div class="amount-form hide-star">
+								<button type="button" class="bg-white" style="cursor: pointer;" data-toggle="modal"
+									data-target="#amount-choice">
+									1 phòng, 1 người lớn, 1 trẻ em <i class="fas fa-sort"></i>
+								</button>
+							</div>
+							<div class="room-type-form">
+
+								<p>
+									<button class="" id="star" aria-expanded="false" aria-controls="collapseExample">
+										Khách sạn 5 sao <i class="fas fa-star text-warning"></i>
+									</button>
+								</p>
+								<div class="text-dark text-left" id="star-tab">
+									<div class="card card-body">
+										<div class="custom-control custom-checkbox mb-2">
+											<input type="checkbox" class="custom-control-input" id="5_star" name="">
+											<label class="custom-control-label text-warning" for="5_star">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</label>
+										</div>
+										<div class="custom-control custom-checkbox mb-2">
+											<input type="checkbox" class="custom-control-input" id="4_star" name="">
+											<label class="custom-control-label text-warning" for="4_star">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+
+											</label>
+										</div>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="3_star" name="">
+											<label class="custom-control-label text-warning" for="3_star">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="hide-star">
+								<button type="submit">Tìm kiếm <i class="fas fa-search ml-2"></i></button>
+							</div>
+						</form>
+						<div class="search-result-notification hide-star">
+							<p class="text-left mt-3 d-none">
+								Có 169 Khách sạn có phòng theo ngày đã chọn
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- modal -->
+
+	<div class="modal fade" id="amount-choice" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content text-center">
+				<div class="modal-body">
+					<form action="">
+						<p class="text-center font-weight-bold">Số phòng</p>
+						<!--  -->
+						<div class="input-group mb-3 room-amount-choice form-group form-inline">
+							<div class="input-group-prepend">
+								<span class="input-group-text"> <i class="fas fa-plus-circle text-success fa-2x plus-amount"></i></span>
+							</div>
+							<input value="1" type="number" name="" min="1" id="room-amount" class="form-control room-input" />
+
+							<div class="input-group-append">
+								<span class="input-group-text"><i
+										class="fas fa-minus-circle fa-2x text-success minus-amount"></i></span>
+							</div>
+						</div>
+
+						<!--  -->
+						<p class="text-center font-weight-bold">Người lớn</p>
+						<div class="input-group mb-3 adult-amount-choice form-group form-inline">
+							<div class="input-group-prepend">
+								<span class="input-group-text"> <i class="fas fa-plus-circle text-success fa-2x plus-amount"></i></span>
+							</div>
+							<input value="1" type="number" name="" min="1" id="adult-amount" class="form-control adult-input" />
+
+							<div class="input-group-append">
+								<span class="input-group-text"><i
+										class="fas fa-minus-circle fa-2x text-success minus-amount"></i></span>
+							</div>
+						</div>
+						<!--  -->
+						<p class="text-center font-weight-bold">Trẻ em</p>
+						<div class="input-group mb-3 child-amount-choice form-group form-inline">
+							<div class="input-group-prepend">
+								<span class="input-group-text"> <i class="fas fa-plus-circle text-success fa-2x plus-amount"></i></span>
+							</div>
+							<input value="1" type="number" name="" min="1" id="child-amount" class="form-control child-input" />
+
+							<div class="input-group-append">
+								<span class="input-group-text"><i
+										class="fas fa-minus-circle fa-2x text-success minus-amount"></i></span>
+							</div>
+						</div>
+						<!--  -->
+						<input type="submit" value="Lựa chọn"
+							class="cursor-pointer border text-primary border-primary rounded p-2 px-5" data-dismiss="modal" />
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- show filter search -->
+	<section id="show-filter-search" class="bg-extra-light py-2">
+		<div class="container-fluid">
+			<!-- start -->
+			<div class="navbar navbar-expand-lg navbar-filter">
+				<!-- <a class="navbar-brand" href="#">Lọc chỗ nghỉ theo</a> -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFilter"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-bars main-color"></i>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarFilter">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<i class="fas fa-meteor"></i>
+								Phổ biến
+								<i class="fas fa-chevron-down"> </i></a>
+							<!-- general tab -->
+							<div class="general-tab tab bg-extra-light">
+								<div class="tab-title mt-2">
+									<p class="lead">
+										Chọn lọc theo phổ biến ở trang
+									</p>
+								</div>
+								<!--start  -->
+								<div class="tab-form">
+									<!-- location tab -->
+									<form action="">
+										<div class="custom-control custom-check-box py-1">
+											<input type="checkbox" name="evaluate-customer-choice" id="general-choice-1"
+												class="custom-control-input" />
+											<label for="general-choice-1" class="custom-control-label d-flex justify-content-between">
+												<div class="extra-small">
+													Khu vực Thanh Xuân(
+													<span class="number">12</span>)
+												</div>
+											</label>
+										</div>
+										<div class="custom-control custom-check-box py-1">
+											<input type="checkbox" name="evaluate-customer-choice" id="general-choice-2"
+												class="custom-control-input" />
+											<label for="general-choice-2" class="custom-control-label d-flex justify-content-between">
+												<div class="extra-small">
+													Miễn phí giặt là (
+													<span class="number">6</span>)
+												</div>
+											</label>
+										</div>
+
+									</form>
+								</div>
+								<!-- end -->
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<i class="fas fa-tag"></i> Giá
+								<i class="fas fa-chevron-down"> </i>
+							</a>
+							<!-- price tab -->
+							<div class="price-tab tab bg-extra-light">
+								<div class="tab-title">
+									<div class="d-flex justify-content-between lead mt-2">
+										<p>
+											Giá phòng
+										</p>
+										<a class="text-danger mt-1 font-weight-bold" href="#">
+											Xoá
+										</a>
+									</div>
+								</div>
+								<!--start  -->
+								<div class="tab-form">
+									<form action="">
+										<div class="custom-control custom-checkbox py-1">
+											<input type="checkbox" name="" id="price-choice-1" class="custom-control-input" />
+											<label for="price-choice-1" class="custom-control-label d-flex justify-content-between">
+												500.000đ - 1.000.000đ
+											</label>
+										</div>
+										<div class="custom-control custom-checkbox py-1">
+											<input type="checkbox" name="" id="price-choice-2" class="custom-control-input" />
+											<label for="price-choice-2" class="custom-control-label d-flex justify-content-between">
+												1.000.000đ - 1.500.000đ
+											</label>
+										</div>
+										<div class="custom-control custom-checkbox py-1">
+											<input type="checkbox" name="" id="price-choice-3" class="custom-control-input" />
+											<label for="price-choice-3" class="custom-control-label d-flex justify-content-between">
+												1.500.000đ - 2.500.000đ
+											</label>
+										</div>
+
+									</form>
+								</div>
+								<!-- end -->
+							</div>
+
+							<!-- end -->
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<i class="fas fa-star"></i> Sao
+								<i class="fas fa-chevron-down"></i>
+							</a>
+							<!-- star tab -->
+							<div class="star-tab tab bg-extra-light">
+								<div class="tab-title">
+									<div class="d-flex justify-content-between lead mt-2">
+										<p>
+											Xếp hạng sao
+										</p>
+										<a class="text-danger mt-1 font-weight-bold" href="#">
+											Xoá
+										</a>
+									</div>
+								</div>
+								<!--start  -->
+								<div class="tab-form">
+									<form action="">
+										<div class="custom-control custom-checkbox py-1">
+											<input type="checkbox" name="" id="star-choice-1" class="custom-control-input" />
+											<label for="star-choice-1" class="custom-control-label d-flex justify-content-between">
+												<div>
+													<i class="fas fa-star logo-color "></i>
+													<i class="fas fa-star logo-color"></i>
+													<i class="fas fa-star logo-color"></i>
+													<i class="fas fa-star logo-color"></i>
+													<i class="fas fa-star logo-color"></i>
+													<span class="amount-evaluate">(13)</span>
+												</div>
+
+											</label>
+										</div>
+										<div class="custom-control custom-checkbox py-1">
+											<input type="checkbox" name="" id="star-choice-2" class="custom-control-input" />
+
+											<label for="star-choice-2" class="custom-control-label d-flex justify-content-between">
+												<div>
+													<i class="fas fa-star logo-color"></i>
+													<i class="fas fa-star logo-color"></i>
+													<i class="fas fa-star logo-color"></i>
+													<i class="fas fa-star logo-color"></i>
+													<span class="amount-evaluate">(2)</span>
+												</div>
+
+											</label>
+										</div>
+										<div class="custom-control custom-checkbox py-1">
+											<input type="checkbox" name="" id="star-choice-3" class="custom-control-input" />
+											<label for="star-choice-3" class="custom-control-label d-flex justify-content-between">
+												<div>
+													<i class="fas fa-star logo-color"></i>
+													<i class="fas fa-star logo-color"></i>
+													<i class="fas fa-star logo-color"></i>
+													<span class="amount-evaluate">(6)</span>
+												</div>
+
+											</label>
+										</div>
+									</form>
+								</div>
+							</div>
+							<!-- end -->
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<i class="fas fa-map-marker-alt"></i> Vị trí
+								<i class="fas fa-chevron-down"></i></a>
+							<!-- location tab -->
+							<div class="location-tab tab bg-extra-light">
+								<div class="tab-title">
+									<div class="d-flex lead mt-1">
+										<p>
+											Khu vực
+										</p>
+									</div>
+								</div>
+								<!--start  -->
+								<div class="tab-form">
+									<form action="">
+										<div class="custom-control custom-checkbox py-1">
+											<input type="checkbox" name="" id="location-choice-1" class="custom-control-input" />
+											<label for="location-choice-1" class="custom-control-label d-flex justify-content-between">
+												<div class="extra-small">
+													<p class="area">
+														Khu vực Đống Đa
+														<span class="amount-location">(13)</span>
+													</p>
+													<p class="price">
+														<i class="fas fa-tag"></i>
+														<span class="money">
+															256.585đ
+														</span>
+													</p>
+												</div>
+											</label>
+										</div>
+										<div class="custom-control custom-checkbox py-1">
+											<input type="checkbox" name="" id="location-choice-2" class="custom-control-input" />
+
+											<label for="location-choice-2" class="custom-control-label">
+												<div class="extra-small">
+													<p class="area">
+														Khu vực Cầu Giấy
+														<span class="amount-location">(11)</span>
+													</p>
+													<p class="price">
+														<i class="fas fa-tag"></i>
+														<span class="money">
+															213.585đ
+														</span>
+													</p>
+												</div>
+											</label>
+										</div>
+										<div class="custom-control custom-checkbox py-1">
+											<input type="checkbox" name="" id="location-choice-3" class="custom-control-input" />
+											<label for="location-choice-3" class="custom-control-label">
+												<div class="extra-small">
+													<p class="area">
+														Khu vực Ba Đình
+														<span class="amount-location">(13)</span>
+													</p>
+													<p class="price">
+														<i class="fas fa-tag"></i>
+														<span class="money">
+															124.938đ
+														</span>
+													</p>
+												</div>
+											</label>
+										</div>
+									</form>
+									<div class="more-location">
+										<a href="#" class="text-center d-inline-block ml-3 text-white">Xem thêm 10 mục khác <i
+												class="fas fa-chevron-down"></i></a>
+									</div>
+									<hr />
+								</div>
+								<!-- evaluate - location -->
+								<div class="location-evaluates">
+									<p class="lead">
+										Đánh giá vị trí
+									</p>
+									<!-- start -->
+									<div class="evaluate-tab-form">
+										<form action="">
+											<div class="custom-control custom-radio py-1">
+												<input type="radio" name="evaluate-choice" id="evaluate-choice-1"
+													class="custom-control-input" />
+												<label for="evaluate-choice-1" class="custom-control-label d-flex justify-content-between">
+													<div class="extra-small">
+														<p class="area">
+															<span class="font-weight-bold mr-2">9+</span>
+															Khu vực Đống Đa
+															<span class="amount-evaluate-choice">(13)</span>
+														</p>
+													</div>
+												</label>
+											</div>
+											<!--  -->
+											<div class="custom-control custom-radio py-1">
+												<input type="radio" name="evaluate-choice" id="evaluate-choice-2"
+													class="custom-control-input" />
+												<label for="evaluate-choice-2" class="custom-control-label d-flex justify-content-between">
+													<div class="extra-small">
+														<p class="area">
+															<span class="font-weight-bold mr-2">8+</span>
+															Khu vực Mỹ Đình
+															<span class="amount-evaluate-choice">(21)</span>
+														</p>
+													</div>
+												</label>
+											</div>
+											<!--  -->
+											<div class="custom-control custom-radio py-1">
+												<input type="radio" name="evaluate-choice" id="evaluate-choice-3"
+													class="custom-control-input" />
+												<label for="evaluate-choice-3" class="custom-control-label d-flex justify-content-between">
+													<div class="extra-small">
+														<p class="area">
+															<span class="font-weight-bold mr-2">7+</span>
+															Khu vực Thanh Xuân
+															<span class="amount-evaluate-choice">(22)</span>
+														</p>
+													</div>
+												</label>
+											</div>
+											<!--  -->
+											<div class="custom-control custom-radio py-1">
+												<input type="radio" name="evaluate-choice" id="evaluate-choice-4"
+													class="custom-control-input" />
+												<label for="evaluate-choice-4" class="custom-control-label d-flex justify-content-between">
+													<div class="extra-small">
+														<p class="area">
+															<span class="font-weight-bold mr-2">7+</span>
+															Khu vực Cầu Giấy
+															<span class="amount-evaluate-choice">(21)</span>
+														</p>
+													</div>
+												</label>
+											</div>
+											<!--  -->
+										</form>
+										<hr />
+									</div>
+									<!-- end -->
+								</div>
+
+								<!-- what you do on the location -->
+								<div class="work-tab-form">
+									<p class="lead work-tab-form-title">
+										Làm gì ở địa bàn này
+									</p>
+									<form action="">
+										<!-- 1 -->
+										<div class="custom-control custom-checkbox py-0">
+											<input type="checkbox" name="" id="work-choice-1" class="custom-control-input" />
+											<label for="work-choice-1" class="custom-control-label">
+												<div class="extra-small">
+													<p class="activity">
+														Mua sắm
+														<span class="amount-location">(13)</span>
+													</p>
+												</div>
+											</label>
+										</div>
+										<!-- 2 -->
+										<div class="custom-control custom-checkbox py-0">
+											<input type="checkbox" name="" id="work-choice-2" class="custom-control-input" />
+											<label for="work-choice-2" class="custom-control-label">
+												<div class="extra-small">
+													<p class="activity">
+														Ăn uống
+														<span class="amount-location">(13)</span>
+													</p>
+												</div>
+											</label>
+										</div>
+										<!-- 3 -->
+										<div class="custom-control custom-checkbox py-0">
+											<input type="checkbox" name="" id="work-choice-3" class="custom-control-input" />
+											<label for="work-choice-3" class="custom-control-label">
+												<div class="extra-small">
+													<p class="activity">
+														Tham quan danh lam thắng cảnh
+														<span class="amount-location">(17)</span>
+													</p>
+												</div>
+											</label>
+										</div>
+									</form>
+									<div class="more-activities">
+										<a href="#" class="text-center d-inline-block ml-3 logo-color">Xem thêm 10 mục khác <i
+												class="fas fa-chevron-down"></i></a>
+									</div>
+								</div>
+								<!--  -->
+								<!--  -->
+							</div>
+							<!-- end -->
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<i class="fas fa-plus-circle"></i> Thêm
+								<i class="fas fa-chevron-down"></i></a>
+							<!-- add tab -->
+							<div class="add-tab tab bg-extra-light p-3">
+								<!--start -->
+								<div class="tab-form">
+									<form action="" class="main-form">
+										<!-- tab 1 : customers evaluation-->
+										<div class="tab-evaluate-customer child-tab">
+											<h5 class="tab-title font-weight-bold py-3">
+												Đánh giá của khách
+											</h5>
+											<div class="inner">
+												<!--  -->
+												<div class="custom-control custom-radio py-1">
+													<input type="radio" name="evaluate-customer-choice" id="evaluate-customer-choice-1"
+														class="custom-control-input" />
+													<label for="evaluate-customer-choice-1"
+														class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="type-choice">
+																<span class="font-weight-bold mr-2">9+</span>
+																Trên cả tuyệt vời
+																<span class="amount-evaluate-customer">(60)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+												<div class="custom-control custom-radio py-1">
+													<input type="radio" name="evaluate-customer-choice" id="evaluate-customer-choice-2"
+														class="custom-control-input" />
+													<label for="evaluate-customer-choice-2"
+														class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="type-choice">
+																<span class="font-weight-bold mr-2">9+</span>
+																Xuất sắc
+																<span class="amount-evaluate-customer">(13)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+												<div class="custom-control custom-radio py-1">
+													<input type="radio" name="evaluate-customer-choice" id="evaluate-customer-choice-3"
+														class="custom-control-input" />
+													<label for="evaluate-customer-choice-3"
+														class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="type-choice">
+																<span class="font-weight-bold mr-2">9+</span>
+																Rất tốt
+																<span class="amount-evaluate-customer">(13)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+												<div class="custom-control custom-radio py-1">
+													<input type="radio" name="evaluate-customer-choice" id="evaluate-customer-choice-4"
+														class="custom-control-input" />
+													<label for="evaluate-customer-choice-4"
+														class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="type-choice">
+																<span class="font-weight-bold mr-2">9+</span>
+																Hài lòng
+																<span class="amount-evaluate-customer">(103)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+											</div>
+										</div>
+										<!-- tab 2 : equipment -->
+										<div class="tab-equipment child-tab">
+											<h5 class="tab-title font-weight-bold py-3">
+												<hr />
+												Tiện nghi chỗ nghỉ
+											</h5>
+											<div class="inner">
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="equipment-choice-1" class="custom-control-input" />
+													<label for="equipment-choice-1" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="equipment">
+																Bể Bơi
+																<span class="amount-equipment">(60)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="equipment-choice-2" class="custom-control-input" />
+													<label for="equipment-choice-2" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="equipment">
+																Internet
+																<span class="amount-equipment">(60)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="equipment-choice-3" class="custom-control-input" />
+													<label for="equipment-choice-3" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="equipment">
+																Thích hợp cho gia đình
+																<span class="amount-equipment">(10)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="equipment-choice-4" class="custom-control-input" />
+													<label for="equipment-choice-4" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="equipment">
+																Phòng tập
+																<span class="amount-equipment">(100)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="equipment-choice-5" class="custom-control-input" />
+													<label for="equipment-choice-5" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="equipment">
+																Đưa đón sân bay
+																<span class="amount-equipment">(40)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="equipment-choice-6" class="custom-control-input" />
+													<label for="equipment-choice-6" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="equipment">
+																Khu vực hút thuốc
+																<span class="amount-equipment">(6)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="equipment-choice-7" class="custom-control-input" />
+													<label for="equipment-choice-7" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="equipment">
+																Nhà hàng
+																<span class="amount-equipment">(300)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="equipment-choice-8" class="custom-control-input" />
+													<label for="equipment-choice-8" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="equipment">
+																Tiện nghi cho người khuyết tật
+																<span class="amount-equipment">(9)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="equipment-choice-9" class="custom-control-input" />
+													<label for="equipment-choice-9" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="equipment">
+																Câu lạc bộ đêm
+																<span class="amount-equipment">(15)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+											</div>
+										</div>
+										<!-- tab 3 : extra services -->
+										<div class="tab-services child-tab">
+											<h5 class="tab-title font-weight-bold py-3">
+												<hr />
+												Dịch vụ đi kèm
+											</h5>
+											<div class="inner">
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="service-choice-1" class="custom-control-input" />
+													<label for="service-choice-1" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="extra-service">
+																Có ăn sáng
+																<span class="amount-services">(20)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="service-choice-2" class="custom-control-input" />
+													<label for="service-choice-2" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="extra-service">
+																Cho thuê phương tiện
+																<span class="amount-services">(100)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="service-choice-3" class="custom-control-input" />
+													<label for="service-choice-3" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="extra-service">
+																Dọn phòng miễn phí
+																<span class="amount-services">(30)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+											</div>
+										</div>
+										<!-- tab 4 : payment choice tab -->
+										<div class="tab-payment-choice child-tab">
+											<h5 class="tab-title font-weight-bold py-3">
+												<hr />
+												Lựa chọn thanh toán
+											</h5>
+											<div class="inner">
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="payment-choice-1" class="custom-control-input" />
+													<label for="payment-choice-1" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="payment-choice">
+																Thanh toán tại nơi ở
+																<span class="amount-payment">(6)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="payment-choice-2" class="custom-control-input" />
+													<label for="payment-choice-2" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="payment-choice">
+																Đặt trước trả tiền sau
+																<span class="amount-payment">(31)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="payment-choice-3" class="custom-control-input" />
+													<label for="payment-choice-3" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="payment-choice">
+																Trả tiền liền
+																<span class="amount-payment">(11)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="payment-choice-4" class="custom-control-input" />
+													<label for="payment-choice-4" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="payment-choice">
+																Đặt không cần cọc
+																<span class="amount-payment">(2)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+											</div>
+										</div>
+										<!-- tab 5 : comments on specific things -->
+										<div class="tab-specific-things child-tab">
+											<h5 class="tab-title font-weight-bold py-3">
+												<hr />
+												Nhận xét của khách theo hạng mục
+											</h5>
+											<div class="inner">
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="specific-choice-1" class="custom-control-input" />
+													<label for="specific-choice-1" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="specific-choice">
+																Đáng đồng tiền bát gạo
+																<span class="amount-specific">(9)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="specific-choice-2" class="custom-control-input" />
+													<label for="specific-choice-2" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="specific-choice">
+																Dịch vụ xuất sắc
+																<span class="amount-specific">(55)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="specific-choice-3" class="custom-control-input" />
+													<label for="specific-choice-3" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="specific-choice">
+																Rất sạch sẽ
+																<span class="amount-specific">(41)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="specific-choice-4" class="custom-control-input" />
+													<label for="specific-choice-4" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="specific-choice">
+																Vị trí rất thuận tiện
+																<span class="amount-specific">(20)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="specific-choice-5" class="custom-control-input" />
+													<label for="specific-choice-5" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="specific-choice">
+																Tiện nghi tuyệt vời
+																<span class="amount-specific">(26)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+												<div class="custom-control custom-checkbox py-1">
+													<input type="checkbox" name="" id="specific-choice-6" class="custom-control-input" />
+													<label for="specific-choice-6" class="custom-control-label d-flex justify-content-between">
+														<div class="extra-small">
+															<p class="specific-choice">
+																Phòng ốc tuyệt vời
+																<span class="amount-specific">(16)</span>
+															</p>
+														</div>
+													</label>
+												</div>
+												<!--  -->
+											</div>
+										</div>
+										<!--  -->
+									</form>
+								</div>
+							</div>
+							<!-- end -->
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0 search-box">
+						<input class="form-control mr-sm-2 rounded-pill extra-small" type="search"
+							placeholder="Từ khóa hay tên khách sạn" aria-label="Search" />
+						<i class="fas fa-search"></i>
+					</form>
+				</div>
+			</div>
+			<!-- end -->
+		</div>
+	</section>
+
+	<!-- end section -->
+	<!-- hotel result section -->
+	<section id="hotel-results">
+		<div class="container-fluid">
+			<div class="inner py-4">
+				<div class="row w-100">
+					<!-- aside hotel search-->
+					<aside class="suggestion-hotels col-lg-3 col-md-12">
+						<div class="suggestion-hotels-title">
+							<p class="lead font-weight-bold p-3 mb-0 pb-0">
+								Đề xuất cho bạn ở trang
+							</p>
+						</div>
+						<div class="list-hotels d-flex flex-column">
+							<!-- hotel 1 -->
+							<div class="hotel d-flex p-2 mb-4 bg-white">
+								<div class="p-1">
+									<a href="#"> <img src="./img/ban_mai.png" alt="Hotel" /></a>
+
+								</div>
+								<div class="pl-3">
+									<h6 class="hotel-name">
+										<a href="#" class="text-dark font-weight-bold">Ban Chao Mai</a>
+
+									</h6>
+									<h6 class="hotel-type">
+										Beach House
+									</h6>
+									<p class="rating text-warning">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</p>
+									<div class="d-flex justify-content-between py-2">
+
+										<div class="number-rating">
+											<p class="text-white rounded bg-success p-2 d-inline-block">
+												7.5
+											</p>
+										</div>
+
+										<div class="ml-2 small">
+											<p>
+												Tuyệt vời
+											</p>
+											<p class="extra-small">
+												<span class="number-comments">102</span> nhận xét
+											</p>
+										</div>
+									</div>
+									<div class="price">
+										<p class="small">
+											Giá mỗi đêm rẻ nhất từ
+										</p>
+										<p class="large text-danger">
+											308.475 <span class="digit-money">đ</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- hotel 2 -->
+							<div class="hotel d-flex p-2 mb-4 bg-white">
+								<div class="p-1">
+									<a href="#"> <img src="./img/ban_mai.png" alt="Hotel" /></a>
+
+								</div>
+								<div class="pl-3">
+									<h6 class="hotel-name">
+										<a href="#" class="text-dark font-weight-bold">Ban Chao Mai</a>
+
+									</h6>
+									<h6 class="hotel-type">
+										Beach House
+									</h6>
+									<p class="rating text-warning">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</p>
+									<div class="d-flex justify-content-between py-2">
+										<div class="number-rating">
+											<p class="text-white rounded bg-success p-2 d-inline-block">
+												7.5
+											</p>
+										</div>
+
+										<div class="ml-2 small">
+											<p>
+												Tuyệt vời
+											</p>
+											<p class="extra-small">
+												<span class="number-comments">102</span> nhận xét
+											</p>
+										</div>
+									</div>
+									<div class="price">
+										<p class="small">
+											Giá mỗi đêm rẻ nhất từ
+										</p>
+										<p class="large text-danger">
+											308.475 <span class="digit-money">đ</span>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!--  -->
+						</div>
+					</aside>
+					<!-- main hotel search-->
+					<main class="main-hotels col-lg-9 col-md-12">
+						<div class="container-fluid">
+							<div class="main-hotels-header">
+								<div class="header-above">
+									<ul class="orders">
+										<li class="order">
+											<button>Sắp xếp theo</button>
+										</li>
+										<li class="order">
+											<button>Phù hợp nhất</button>
+										</li>
+										<li class="order">
+											<button>
+												Giá thấp nhất trước
+											</button>
+										</li>
+
+										<li class="dropdown order distance">
+											<button type="button" class="dropdown-toggle" data-toggle="dropdown">
+												Khoảng cách
+											</button>
+											<div class="dropdown-menu py-3">
+												<!--  -->
+												<div class="dropdown-item">
+													<div class="vehicle">
+														<h5 class="title font-weight-bold">
+															Phương tiện di chuyển
+														</h5>
+														<div class="inner">
+															<ul>
+																<li>
+																	Ga Hà Nội
+																</li>
+																<li>
+																	Bến xe Giáp Bát
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<!--  -->
+												<div class="dropdown-item">
+													<div class="travel-location">
+														<h5 class="title font-weight-bold">
+															Địa điểm du lịch
+														</h5>
+														<div class="inner">
+															<ul>
+																<li>
+																	Hồ Hoàn Kiếm
+																</li>
+																<li>
+																	Phố Cổ
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<!--  -->
+												<div class="dropdown-item">
+													<div class="airport">
+														<h5 class="title font-weight-bold">
+															Sân bay
+														</h5>
+														<div class="inner">
+															<ul>
+																<li>
+																	Sân bay Nội Bài
+																</li>
+																<li>
+																	Sân bay Gia Lâm
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="dropdown order top-evaluate">
+											<button type="button" class="dropdown-toggle" data-toggle="dropdown">
+												Đánh giá hàng đầu
+											</button>
+											<div class="dropdown-menu">
+												<a class="dropdown-item" href="#">Link 1</a>
+												<a class="dropdown-item" href="#">Link 2</a>
+												<a class="dropdown-item" href="#">Link 3</a>
+											</div>
+										</li>
+										<li class="order">
+											<button>Ưu đãi cho bạn</button>
+										</li>
+									</ul>
+								</div>
+								<!-- header under -->
+								<div class="header-under">
+									<p>
+										<i class="fas fa-user"></i>
+										<span class="small">Những khách sạn được lựa chọn riêng dành cho quý
+											khách</span>
+									</p>
+								</div>
+							</div>
+							<!--  -->
+							<div class="list-result-hotels">
+								<!-- hotel 1 -->
+								<div class="hotel hotel-1 rounded border border-danger">
+									<div class="hotel-info">
+										<!-- header info -->
+										<div class="hotel-1-header d-flex bg-red">
+											<div class="bg-extra-red">
+												<span class="watch"><i class="fas fa-stopwatch fa-2x"></i></span>
+											</div>
+											<div class="p-2">
+												<h4>
+													Ưu đãi hàng ngày
+												</h4>
+												<p class="small">
+													Nhanh tay đặt đừng để mất giá này!
+												</p>
+											</div>
+										</div>
+										<div class="main-info p-3 w-100 d-flex">
+											<div class="left-info d-flex">
+												<div class="hotel-imgs">
+													<div class="top-img">
+														<a href="#"> <img src="./img/big_bed_1.png" alt="Hotel  Siritrang botique" /></a>
+
+													</div>
+													<div class="extra-imgs">
+														<div>
+															<img src="./img/sm_bed_2.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_3.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_4.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_5.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_1.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_6.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_7.png" alt="Hotel  Siritrang botique" />
+														</div>
+
+														<div>
+															<img src="./img/sm_bed_2.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_4.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_1.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_3.png" alt="Hotel Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_2.png" alt="Hotel  Siritrang botique" />
+															<a href="#" class="font-weight-bold">Xem tất cả</a>
+														</div>
+													</div>
+												</div>
+												<div class="hotel-details px-4">
+													<h4 class="hotel-name">
+														<a href="#" class="text-dark">
+															Siritrang Boutique Hotel
+														</a>
+
+													</h4>
+													<div class="text-warning location">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<div class="text-primary small">
+															<a href="#">
+																<i class="fas fa-map-marker-alt"></i>
+																Lộc Thọ, Nha Trang, Khánh Hòa - Xem trên bản
+																đồ
+															</a>
+														</div>
+													</div>
+													<div class="text-success small utilities py-2">
+														<div>
+															<span class="border border-success">Vị trí tuyệt vời</span>
+															<span class="border border-success">Đưa đón sân bay</span>
+														</div>
+														<div>
+															<span class="border border-success">Trả tiền sau</span>
+															<span class="border border-success">Ăn sáng</span>
+															<span class="border border-success"><a href="#" class="text-success">+1</a></span>
+														</div>
+													</div>
+													<!--  -->
+													<div class="bg-extra-light text-primary d-inline-block p-1 rounded good-price">
+														<p class="small">
+															<i class="fas fa-gifts"></i> Giá tốt nhất thành
+															phố
+														</p>
+													</div>
+													<p class="small amount-choice py-1">
+														<i class="fas fa-users">
+															Được 85% khách lựa chọn
+														</i>
+													</p>
+													<!--  -->
+													<div id="sale-card" class="text-success py-3 sale-card d-flex">
+														<p class="bg-extra-light d-inline-block p-1 rounded border border-success">
+															Giảm giá 24h
+														</p>
+														<p class="small ml-2 mt-2">
+															Đã dùng mã coupon 24H SALE
+														</p>
+													</div>
+													<div class="d-flex">
+														<div class="bg-red d-inline-block rounded p-1 small">
+															Đang bán chạy
+														</div>
+														<p class="small text-danger mt-1 ml-3">
+															Lần đặt gần nhất cách đây 3 giờ
+														</p>
+													</div>
+												</div>
+											</div>
+											<!-- right info -->
+											<div class="right-info price">
+												<div class="inner">
+													<div class="top">
+														<div class="comments">
+															<div class="rating-type">
+																<div>
+																	<p>
+																		Tuyệt vời
+																	</p>
+																</div>
+
+																<p>
+																	<span class="number-comments">102</span>
+																	nhận xét
+																</p>
+															</div>
+															<div class="vast-left">
+																<p class="rating btn btn-success">
+																	7.5
+																</p>
+															</div>
+
+														</div>
+													</div>
+													<div class="bottom">
+														<p class="bg-red rounded p-1 small text-center d-inline-block">
+															GIẢM 75% HÔM NAY
+														</p>
+														<p class="small py-1">
+															Giá mỗi đêm rẻ nhất từ
+														</p>
+														<p class="text-secondary line-through real-price">
+															2.308.475đ
+														</p>
+														<p class="text-danger sale-price">
+															308.475đ
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- endow banner -->
+								<div class="endow-banner my-4 text-center">
+									<div class="inner">
+										<div class="tag">
+											<img src="./img/tag.png" alt="Hotel" />
+										</div>
+										<div class="title">
+											<div>
+												Ưu đãi thành viên -
+												<span class="large">
+													Giảm đến 30%
+												</span>
+											</div>
+											<p class="small">
+												Giá giảm ngay khi bạn đăng ký thành viên! Nhiều ưu đãi
+												và trải nghiệm tuyệt vời hơn.
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- hotel 2 -->
+								<!--hotel 4 - out of room  -->
+								<div class="hotel rounded border hotel-out-of-room">
+									<div class="hotel-info">
+										<div class="main-info p-3 w-100 d-flex">
+											<div class="left-info d-flex">
+												<div class="hotel-imgs">
+													<div class="top-img">
+														<a href="#"><img src="./img/big_bed_1.png" alt="Hotel  Siritrang botique" /></a>
+
+													</div>
+													<div class="extra-imgs">
+														<div>
+															<img src="./img/sm_bed_2.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_3.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_4.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_5.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_1.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_6.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_7.png" alt="Hotel  Siritrang botique" />
+														</div>
+
+														<div>
+															<img src="./img/sm_bed_2.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_4.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_1.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_3.png" alt="Hotel  Siritrang botique" />
+														</div>
+														<div>
+															<img src="./img/sm_bed_2.png" alt="Hotel  Siritrang botique" />
+															<a href="#" class="font-weight-bold">Xem tất cả</a>
+														</div>
+													</div>
+												</div>
+												<div class="hotel-details px-4">
+													<div class="out-of-room-card">
+														<p class="bg-red text-uppercase d-inline-block py-1 px-2 rounded text-center">
+															Hết phòng
+														</p>
+													</div>
+													<h4 class="hotel-name mt-1">
+														<a href="#" class="text-dark">Siritrang Boutique Hotel</a>
+
+													</h4>
+													<div class="text-warning location">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<div class="text-primary small">
+															<a href="#">
+																<i class="fas fa-map-marker-alt"></i>
+																Lộc Thọ, Nha Trang, Khánh Hòa - Xem trên bản
+																đồ
+															</a>
+														</div>
+													</div>
+													<div class="text-success small utilities py-2">
+														<div>
+															<span class="border border-success">Vị trí tuyệt vời</span>
+															<span class="border border-success">Đưa đón sân bay</span>
+														</div>
+														<div>
+															<span class="border border-success">Trả tiền sau</span>
+															<span class="border border-success">Ăn sáng</span>
+															<span class="border border-success"><a href="#" class="text-success">+1</a></span>
+														</div>
+													</div>
+													<div class="bg-extra-light text-primary d-inline-block p-1 rounded good-price">
+														<p class="small">
+															<i class="fas fa-gifts"></i> Giá tốt nhất thành
+															phố
+														</p>
+													</div>
+													<p class="small amount-choice py-1">
+														<i class="fas fa-users">
+															Được 85% khách lựa chọn
+														</i>
+													</p>
+													<div class="text-success sale-card py-3 d-flex">
+														<p class="bg-extra-light d-inline-block p-1  rounded border border-success">
+															Giảm giá 24h
+														</p>
+														<p class="small ml-2 mt-2">
+															Đã dùng mã coupon 24H SALE
+														</p>
+													</div>
+													<div class="d-flex">
+														<div class="bg-red d-inline-block rounded p-1 small">
+															Đang bán chạy
+														</div>
+														<p class="small text-danger mt-1 ml-3">
+															Lần đặt gần nhất cách đây 3 giờ
+														</p>
+													</div>
+												</div>
+											</div>
+											<!-- right info -->
+											<div class="right-info price">
+												<div class="inner">
+													<div class="top">
+														<div class="comments">
+															<div class="rating-type">
+																<div>
+																	<p>
+																		Tuyệt vời
+																	</p>
+																</div>
+
+																<p>
+																	<span class="number-comments">102</span>
+																	nhận xét
+																</p>
+															</div>
+															<div class="vast-left">
+																<p class="rating btn btn-success">
+																	7.5
+																</p>
+															</div>
+
+														</div>
+													</div>
+													<div class="bottom">
+														<p class="bg-red rounded p-1 small text-center">
+															GIẢM 75% HÔM NAY
+														</p>
+														<p class="small py-1">
+															Giá mỗi đêm rẻ nhất từ
+														</p>
+														<p class="text-secondary line-through real-price">
+															2.308.475đ
+														</p>
+														<p class="text-danger sale-price">
+															308.475đ
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- next page -->
+								<div class="next-page py-3 my-3">
+									<div class="inner d-flex justify-content-between">
+										<nav aria-label="Page navigation example">
+											<ul class="pagination">
+												<li class="page-item"><a class="page-link" href="#">Trang trước</a></li>
+												<li class="page-item"><a class="page-link" href="#">1</a></li>
+												<li class="page-item"><a class="page-link" href="#">2</a></li>
+												<li class="page-item"><a class="page-link" href="#">3</a></li>
+												<li class="page-item"><a class="page-link" href="#">...</a></li>
+												<li class="page-item"><a class="page-link" href="#">Trang sau</a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+								<!--  -->
+							</div>
+						</div>
+						<!-- end -->
+					</main>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- sign up bottom section -->
+	<section id="sign-up-bottom" class="text-white">
+		<div class="container py-2">
+			<div class="inner row">
+				<form class="form-inline col-lg-6">
+					<div class="form-group mb-2">
+						<input type="email" class="form-control" id="" placeholder="Nhập email..." />
+					</div>
+					<button type="submit" class="btn btn-logo mb-2">Đăng ký</button>
+				</form>
+				<div class="sign-up-endow col-lg-5 mt-2">
+					<h6 class="font-weight-bold">
+						Các deal giảm giá đến 60% sẽ được gửi đến inbox của bạn
+					</h6>
+					<p class="small">
+						Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản & Điều Kiện và
+						Chính Sách Bảo Mật của chúng tôi
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- footer main section -->
+	<footer id="main-footer" class="pt-5">
+		<div class="container">
+			<div class="boxes">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="./img/logo.png" alt="logo bottom" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Trụ sở: Tầng 3 Grand Plza
+						</a>
+						<a class="small d-block">
+							117 Trần Duy Hưng, Q. Cầu Giấy, TP Hà Nội
+						</a>
+					</li>
+					<li class="py-1">
+						<a href="#">Tel: (84-4) 3555.8999</a>
+					</li>
+					<li>
+						<a href="#">
+							Email: contact@mandala.vn
+						</a>
+					</li>
+				</ul>
+
+				<ul>
+					<li>
+						<h3>Về Mandala INN</h3>
+					</li>
+					<li>
+						<a href="#">Về chúng tôi</a>
+					</li>
+					<li>
+						<a href="#">Hợp tác cùng chúng tôi</a>
+					</li>
+					<li>
+						<a href="#">Cơ hội nghề nghiệp</a>
+					</li>
+					<li>
+						<a href="#">Cơ hội nghề nghiệp</a>
+					</li>
+					<li>
+						<a href="#">Cơ hội nghề nghiệp</a>
+					</li>
+				</ul>
+
+				<ul>
+					<li>
+						<h3>Đối tác</h3>
+					</li>
+					<li>
+						<a href="#">Đối tác thanh toán</a>
+					</li>
+					<li>
+						<a href="#">Chương trình đại lý</a>
+					</li>
+					<li>
+						<a href="#">Chương trình giao lưu</a>
+					</li>
+					<li>
+						<a href="#">Cơ hội nghề nghiệp</a>
+					</li>
+					<li>
+						<a href="#">Cơ hội nghề nghiệp</a>
+					</li>
+				</ul>
+
+				<ul>
+					<li>
+						<h3>Điều khoản</h3>
+					</li>
+					<li>
+						<a href="#">Điều khoản sử dụng</a>
+					</li>
+					<li>
+						<a href="#">Quyền riêng tư</a>
+					</li>
+					<li>
+						<a href="#">Chính sách bảo mật</a>
+					</li>
+					<li>
+						<a href="#">Cơ hội nghề nghiệp</a>
+					</li>
+					<li>
+						<a href="#">Cơ hội nghề nghiệp</a>
+					</li>
+				</ul>
+
+				<ul>
+					<li>
+						<h3>Tải ứng dụng</h3>
+					</li>
+					<li class="app">
+						<a href="#"><i class="fas fa-qrcode fa-2x"></i></a>
+						<a href="#"><i class="fab fa-apple fa-3x"></i></a>
+						<a href="#"><i class="fab fa-google-play fa-2x"></i></a>
+					</li>
+					<li>
+						<h3 class="mt-3">Kết nối với chúng tôi</h3>
+					</li>
+					<li>
+						<div class="social">
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-facebook"></i></a>
+							<a href="#"><img src="./img/zalo.png" alt="Mandala Zalo" /></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="copy-right text-center bg-copy-right">
+			<div class="container">
+				<p>
+					Copyright &copy; 2020 Mandala INN. All rights reserved
+				</p>
+			</div>
+		</div>
+	</footer>
+	<!-- js boostrap -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<script src="./js/date_picker_home.js"></script>
+	<script src="./js/search_result.js"></script>
+	<script src="./js/toggle_times.js"></script>
+	<script src="./js/plus_minus_amount.js"></script>
+	<script src="./js/fade_star_tab.js"></script>
+</body>
+
+</html>

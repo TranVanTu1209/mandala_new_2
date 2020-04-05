@@ -1,0 +1,204 @@
+.structure-choose,
+.structure-bed,
+.structure-price,
+.services-convenient {
+  padding: 27px;
+  margin-bottom: 20px;
+}
+.structure-title h4 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+.structure-title p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000d08;
+}
+.structure-choose h4,
+.structure-bed h4,
+.structure-price h4 {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #000d08;
+  margin-bottom: 15px;
+}
+.structure-bed label,
+.structure-price label {
+  font-size: 14px;
+  line-height: 19px;
+  color: #000d08;
+  margin-bottom: 30px;
+  display: block;
+}
+.structure-bed q,
+.structure-price q {
+  font-size: 14px;
+  line-height: 25px;
+  color: #bdbdbd;
+  margin-bottom: 30px;
+  display: block;
+}
+select#choose-hotel {
+  margin-bottom: 28px;
+}
+input#exampleInputtext-name {
+  height: 41px;
+}
+select#choose-hotel,
+select#smoke-hotel {
+  width: 208px;
+  height: 41px;
+}
+input#exampleInputtext-number {
+  width: 92px;
+  height: 41px;
+}
+select#bed-hotel,
+select#bed-hotel-max {
+  height: 41px;
+  margin-bottom: 30px;
+}
+select#select-hotel {
+  width: 208px;
+  height: 41px;
+}
+select#smoke-hotel {
+  margin-bottom: 29px;
+}
+i.far.fa-times-circle.float-left {
+  color: #f20530;
+  font-size: 21px;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+.icon-close p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #f20530;
+}
+.icon-language i.fas.fa-plus-circle.float-left {
+  font-size: 20px;
+  padding-right: 11px;
+  color: #488bf8;
+}
+.icon-language p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #488bf8;
+  line-height: 19px;
+}
+.icon-language {
+  margin-bottom: 38px;
+}
+input#amount-room {
+  width: 414px;
+  height: 41px;
+}
+.input-group.VND {
+  width: 293px;
+  height: 41px;
+}
+.input-group-giatri {
+  padding: 10px;
+  font-weight: 400;
+  width: 102px;
+  height: 41px;
+  background-color: #dddfe2;
+  color: black;
+}
+input#VND {
+  height: 41px;
+}
+.structure-footer button {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 100px;
+  width: 100%;
+  height: 58px;
+}
+.structure-note {
+  background-color: #f4f8fe;
+  width: 100%;
+  height: 134px;
+  padding: 17px 20px 20px 20px;
+}
+.structure-note p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #000d08;
+}
+@media only screen and (max-width: 1024px) {
+  .structure-choose,
+  .structure-bed,
+  .structure-price,
+  .services-convenient {
+    padding: 19px;
+  }
+  select#select-hotel {
+    width: 100%;
+    font-size: 13px;
+  }
+  select#bed-hotel,
+  select#bed-hotel-max {
+    font-size: 13px;
+  }
+  .structure-note p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  input#exampleInputtext-name-select,
+  select#choose-hotel-nam,
+  input#amount-room {
+    width: 100%;
+  }
+  select#choose-hotel,
+  select#smoke-hotel,
+  select#choose-hotel-nam {
+    font-size: 12px;
+  }
+  select#bed-hotel,
+  select#bed-hotel-max {
+    padding: 0px 5px;
+  }
+  select#select-hotel {
+    padding: 0px 2px;
+  }
+  .structure-note {
+    padding: 10px;
+  }
+  .structure-note p {
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .structure-choose h4,
+  .structure-bed h4,
+  .structure-price h4 {
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #000d08;
+    margin-bottom: 12px;
+  }
+  .structure-choose label {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .structure-note p {
+    font-size: 16px;
+    line-height: 32px;
+    padding: 19px;
+  }
+  .structure-footer button.btn.btn-primary.btn-lg.btn-block {
+    margin-bottom: 30px;
+  }
+  select#select-hotel {
+    margin-bottom: 25px;
+  }
+}

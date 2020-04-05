@@ -1,0 +1,133 @@
+.structure-choose-room.bg-white {
+  padding: 30px 55px 28px 61px;
+  width: 100%;
+  height: 370px;
+}
+.structure-choose-room img.img-detail.mx-auto.d-block {
+  max-width: 100%;
+  margin-bottom: 43px;
+}
+.structure-step2-title h4 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+.structure-step2-title p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000d08;
+}
+.structure-choose-room {
+  text-align: center;
+}
+.structure-choose-room p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #000d08;
+}
+button.btn.btn-primary.add-room {
+  width: 127px;
+  height: 41px;
+  padding: 11px 16px;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  background-color: #488bf8;
+  border: none;
+}
+.structure-note {
+  width: 100%;
+  background-color: #f4f8fe;
+  height: 134px;
+  padding: 16px 23px 16px 24px;
+}
+.structure-note p {
+  font-size: 14px;
+  line-height: 32px;
+  color: #000d08;
+}
+.structure-step2-body {
+  margin-bottom: 91px;
+}
+
+/* style struct 3 */
+.standard-room .title-struct-3 h5{
+  font-size: 16px;
+  font-weight: bold;
+}
+.outer-button{
+  height: 80px;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+  .structure-note p {
+    font-size: 13px;
+    line-height: 23px;
+  }
+  .structure-step2-title h4 {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 13px;
+  }
+  .structure-step2-title p {
+    font-size: 13px;
+  }
+  .structure-choose-room p {
+    line-height: 27px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .structure-choose-room.bg-white {
+    padding: 22px;
+    width: 100%;
+    height: auto;
+  }
+  section#structure-hotels-step-2 {
+    padding-top: 0 !important;
+  }
+  .structure-step2-title p {
+    font-size: 12px;
+  }
+  button.btn.btn-primary.add-room {
+    width: 100px;
+    height: 38px;
+    padding: 3px 16px;
+    color: white;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .structure-choose-room p {
+    line-height: 25px;
+    font-size: 13px;
+  }
+  .structure-note {
+    width: 100%;
+    background-color: #f4f8fe;
+    height: 134px;
+    padding: 13px 12px 9px 17px;
+  }
+  .structure-note p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .structure-step2-body {
+    margin-bottom: 37px;
+  }
+  .structure-note {
+    width: 100%;
+    background-color: #f4f8fe;
+    height: 134px;
+    padding: 36px 12px 25px 17px;
+  }
+  .structure-note p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}

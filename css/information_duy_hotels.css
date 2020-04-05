@@ -1,0 +1,262 @@
+/**
+ * /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3)
+ *
+ * @format
+ */
+
+/** @format */
+
+.information-name,
+.information-details,
+.information-live,
+.information-tools {
+	padding: 20px 88px 56px 55px;
+	margin-bottom: 30px;
+}
+.information-title h4 {
+	font-size: 24px;
+	font-weight: 600;
+	color: #000d08;
+	line-height: 32px;
+	margin-bottom: 10px;
+}
+.information-title p {
+	font-size: 14px;
+	font-weight: 400;
+	color: #000d08;
+}
+
+.information-name form label.namehotel {
+	font-size: 20px;
+	line-height: 27px;
+	font-weight: 400;
+	color: #000d08;
+	margin-bottom: 15px;
+}
+.information-name p {
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: 400;
+	color: #000d08;
+	margin-bottom: 27px;
+}
+.information-name span {
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: 400;
+	color: #000d08;
+	margin-bottom: 14px;
+	display: block;
+}
+input#namehotel {
+	width: 332px;
+	height: 41px;
+}
+.information-name select#cars {
+	width: 208px;
+	height: 41px;
+}
+.information-live h5 {
+	font-size: 20px;
+	line-height: 27px;
+	font-weight: 400;
+	color: #000d08;
+	margin-bottom: 25px;
+}
+.information-live label.hotel-live {
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: 400;
+	color: #000d08;
+	margin-bottom: 14px;
+	display: block;
+}
+input#hotel-live {
+	width: 332px;
+	height: 41px;
+}
+label.city {
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: 400;
+	color: #000d08;
+	margin-bottom: 14px;
+	display: block;
+}
+select#carsd {
+	width: 332px;
+	height: 41px;
+}
+.information-tools h5 {
+	font-size: 20px;
+	line-height: 27px;
+	font-weight: 400;
+	color: #000d08;
+	margin-bottom: 30px;
+}
+.information-tools p {
+	font-size: 15px;
+	line-height: 19px;
+	font-weight: 400;
+	color: #000d08;
+	margin-bottom: 26px;
+}
+.information-details h5 {
+	font-size: 20px;
+	line-height: 27px;
+	font-weight: 400;
+	color: #000d08;
+	margin-bottom: 30px;
+}
+.information-details .form-group label {
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: 400;
+	color: #000d08;
+	margin-bottom: 14px;
+}
+.information-details .form-group input {
+	width: 332px;
+	height: 41px;
+	margin-bottom: 38px;
+}
+.information-details p {
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: 400;
+	color: #000d08;
+	margin-bottom: 24px;
+}
+label.labl-tel {
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: 400;
+	color: #000d08;
+	margin-bottom: 14px;
+}
+input#formGrouptel,
+input#formGrouptels {
+	width: 293px;
+	height: 41px;
+	margin-bottom: 41px;
+}
+.information-footer button {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: white;
+	margin-bottom: 100px;
+	width: 100%;
+	height: 58px;
+}
+
+.information-note {
+	background-color: #f4f8fe;
+	height: auto;
+	padding: 20px 20px 30px 30px;
+}
+.information-note p {
+	font-size: 14px;
+	line-height: 32px;
+	color: #000d08;
+}
+.information-note {
+	max-width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+	.information-name,
+	.information-details,
+	.information-live,
+	.information-tools {
+		padding: 20px 25px 20px 32px;
+		margin-bottom: 25px;
+	}
+	.information-name form label.namehotel,
+	.information-live h5,
+	.information-tools h5,
+	.information-details h5 {
+		font-size: 20px;
+		line-height: 21px;
+		font-weight: 400;
+		color: #000d08;
+		margin-bottom: 15px;
+	}
+	.information-tools p {
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 400;
+		color: #000d08;
+		margin-bottom: 26px;
+	}
+	.information-note {
+		padding: 15px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.information-title.py-3 {
+		margin-top: 0 !important;
+	}
+	.information-title h4 {
+		font-size: 19px;
+		font-weight: 600;
+		color: #000d08;
+		line-height: 13px;
+		margin-bottom: 10px;
+	}
+	.information-title p {
+		font-size: 12px;
+	}
+	.information-name form label.namehotel,
+	.information-live h5,
+	.information-tools h5,
+	.information-details h5 {
+		font-size: 18px;
+	}
+	.information-tools p {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.custom-control-label {
+		font-size: 14px;
+	}
+	.information-details p {
+		font-size: 13px;
+	}
+	label.city {
+		font-size: 13px;
+	}
+	.information-live label.hotel-live {
+		font-size: 13px;
+		line-height: 19px;
+	}
+	input#hotel-live,
+	select#carsd,
+	.information-name select#cars,
+	input#formGrouptel,
+	input#formGrouptels {
+		font-size: 13px;
+	}
+	.information-note p {
+		font-size: 12px;
+		line-height: 22px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.information-footer button {
+		height: 51px;
+		margin-bottom: 28px;
+	}
+	.information-note p {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 375px) {
+	input#namehotel,
+	input#hotel-live,
+	select#carsd,
+	input#inputfirtname,
+	input#formGrouptels,
+	input#formGrouptel {
+		width: 100%;
+	}
+}

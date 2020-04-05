@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+    integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/tablets.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/style-hg.css">
+  <link rel="icon" href="logo.ico" type="image/x-icon" />
+  <title>Trang khởi tạo KS - Thanh toán </title>
+</head>
+
+<body class="bg-extra-light">
+  <!-- nav bar section -->
+  <header id="enduser-header" class="bg-header">
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <a class="navbar-brand" href="index.html">
+            <img src="./img/logo.png" alt="Main logo" />
+          </a>
+        </div>
+
+        <ul>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-globe text-white"></i> Vietnamese
+            </a>
+            <div class="dropdown-menu bg-header" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Tiếng Anh</a>
+              <a class="dropdown-item" href="#">Tiếng Việt</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Ngôn ngữ khác</a>
+            </div>
+          </li>
+          <li>
+            <a href="vendor_hotel_acc.html"><i class="fas fa-user"></i> Trần Văn Tú </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--  -->
+  <section id="vendor-sign-menu">
+    <div class="container-fluid">
+      <div class="row">
+        <div class=" col-md-1 col-lg-1"></div>
+        <div class="col-lg-11">
+          <ul class="sign-hotel-nav">
+            <li class="active">
+              <a href="vendor_information_new_hotel.html">Thông tin cơ bản</a>
+            </li>
+            <li class="active">
+              <a href="vendor_hotel_structure_1.html">Cơ cấu phòng</a>
+            </li>
+            <li class="active">
+              <a href="vendor_services_hotels.html">Tiện nghi & Dịch vụ</a>
+            </li>
+            <li class="active">
+              <a href="vendor_utilities.html">Tiện nghi</a>
+            </li>
+            <li class="active">
+              <a href="vendor_add_image.html">Hình ảnh</a>
+            </li>
+            <li class="active">
+              <a href="vendor-policy.html">Chính sách</a>
+            </li>
+            <li class="active">
+              <a href="vendor-payment.html">Thanh toán</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- payment menu section -->
+  <section class="vendor-payment ">
+    <div class="container-fluid ">
+      <!-- title -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class=" col-md-1 col-lg-1"></div>
+          <div class="col-lg-10 pl-1">
+            <div class="title py-3">
+              <!-- title left -->
+              <h5 class="text-primary font-weight-bold">
+                Thanh toán
+              </h5>
+              <!-- title-left-text -->
+              <p class="small">
+                Vui lòng nêu phương thức thanh toán Quý vị chấp nhận, các chi tiết về thuế cùng với những lựa chọn
+                khác
+                như các loại phụ phí
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row booking-content">
+        <!-- content left -->
+        <div class="col-lg-1"></div>
+        <div class="col-md-7">
+          <!-- choice payment -->
+          <div class="box form-pay p-4 bg-white mb-4">
+            <h4>
+              Lựa chọn thanh toán của khách
+            </h4>
+            <p class="small">
+              Quý vị có thể thu tiền qua thẻ tín dụng tại chỗ không
+            </p>
+            <form action="">
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="yes" name="get-money">
+                <label class="custom-control-label" for="yes">Có</label>
+              </div>
+              <div class="custom-control custom-radio my-2">
+                <input type="radio" class="custom-control-input" id="no" name="get-money">
+                <label class="custom-control-label" for="no">Không</label>
+              </div>
+            </form>
+            <p class="small py-3">
+              Chúng tôi có thể thông báo với khách rằng Quý vị chấp nhận thanh toán bằng tiền mặt.
+            </p>
+
+          </div>
+          <div class="box form-pay2 p-4 bg-white mb-4">
+            <h4>
+              Thanh toán hoa hồng
+            </h4>
+            <p class="form-pay2-text1">
+              Vào đầu mỗi tháng, chúng tôi sẽ gửi cho Quý vị hóa đơn của tất cả các đặt phòng đã hoàn tất
+              trong tháng trước
+            </p>
+            <h4 class="small py-2"> Chúng tôi nên viết tên nào trên hóa đơn (ví dụ: tên công ty/ pháp lý)
+            </h4>
+            <form action="">
+              <select name="" class="form-control d-block w-50">
+                <option value=""> ABC Hotel </option>
+              </select>
+            </form>
+
+          </div>
+
+          <!-- form-end-rg -->
+          <div class="box form-end-rg p-4 bg-white mb-4">
+            <h4 class="py-2">
+              Để hoàn tất đăng ký, vui lòng đánh dấu vào những ô dưới đây:
+            </h4>
+            <form>
+              <div class="custom-control custom-checkbox py-3">
+                <input type="checkbox" class="custom-control-input" id="terms1" name="">
+                <label class="custom-control-label" for="terms1"> Tôi chứng nhận đây là hoạt động
+                  kinh doanh lưu trú hợp pháp được cấp đầy đủ bằng và giấy
+                  phép
+                  cần thiết, có sẵn để trình khi có yêu cầu. Mandala Inn có quyền kiểm chứng và điều
+                  tra bất
+                  kỳ
+                  thông tin bên Quý vị cung cấp khi đăng ký</label>
+              </div>
+              <div class="custom-control custom-checkbox py-3">
+                <input type="checkbox" class="custom-control-input" id="terms2" name="">
+                <label class="custom-control-label" for="terms2"> Tôi chứng nhận rằng Công ty Bên
+                  Thứ Ba có thể đại diện và đảm bảo sự độc quyền tiếp thị,
+                  quảng
+                  bá, phân phối và bán phòng cho Khách sạn tôi và Công ty Bên Thứ Ba có thể chịu trách
+                  nhiệm
+                  về
+                  các dịch vụ quản lý tại chỗ</label>
+              </div>
+            </form>
+
+          </div>
+          <!-- button -->
+
+          <a href="vendor-payment-success.html" class="btn btn-block w-70 m-auto btn-primary text-uppercase">Hoàn tất
+            đăng ký</a>
+
+          <p class="text-bottom-btn">
+            Sắp xong rồi! Quý vị có thể thay đổi thông tin kể cả sau khi đã hoàn tất đăng ký!
+          </p>
+        </div>
+        <!-- content right -->
+        <div class="col-md-3 rounded">
+          <div class="p-3 bg-skyblue rounded">
+            <p class="">
+              Sau khi hoàn tất đăng ký, Quý vị vẫn sẽ có thể thực hiện
+              thay đổi cho đăng ký trước khi chỗ nghỉ online.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer main section -->
+  <footer id="main-footer" class="pt-5">
+    <div class="container">
+      <div class="boxes">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./img/logo.png" alt="logo bottom" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Trụ sở: Tầng 3 Grand Plza
+            </a>
+            <a class="small d-block">
+              117 Trần Duy Hưng
+            </a>
+            <a href="">
+              Q. Cầu Giấy, TP Hà Nội
+            </a>
+          </li>
+          <li class="py-1">
+            <a href="#">Tel: (84-4) 3555.8999</a>
+          </li>
+          <li>
+            <a href="#">
+              Email: contact@mandala.vn
+            </a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h3>Về Mandala INN</h3>
+          </li>
+          <li>
+            <a href="#">Về chúng tôi</a>
+          </li>
+          <li>
+            <a href="#">Hợp tác cùng chúng tôi</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h3>Đối tác</h3>
+          </li>
+          <li>
+            <a href="#">Đối tác thanh toán</a>
+          </li>
+          <li>
+            <a href="#">Chương trình đại lý</a>
+          </li>
+          <li>
+            <a href="#">Chương trình giao lưu</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h3>Điều khoản</h3>
+          </li>
+          <li>
+            <a href="#">Điều khoản sử dụng</a>
+          </li>
+          <li>
+            <a href="#">Quyền riêng tư</a>
+          </li>
+          <li>
+            <a href="#">Chính sách bảo mật</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h3>Tải ứng dụng</h3>
+          </li>
+          <li class="app">
+            <a href="#"><i class="fas fa-qrcode fa-2x"></i></a>
+            <a href="#"><i class="fab fa-apple fa-3x"></i></a>
+            <a href="#"><i class="fab fa-google-play fa-2x"></i></a>
+          </li>
+          <li>
+            <h3 class="mt-3">Kết nối với chúng tôi</h3>
+          </li>
+          <li>
+            <div class="social">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><img src="./img/zalo.png" alt="Mandala Zalo" /></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy-right text-center bg-copy-right">
+      <div class="container">
+        <p>
+          Copyright &copy; 2020 Mandala INN. All rights reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

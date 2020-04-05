@@ -1,0 +1,768 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+		integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/tablets.css" />
+	<link rel="stylesheet" href="./css/mobile.css" />
+	<link rel="icon" href="logo.ico" type="image/x-icon" />
+	<title>End User | Hoàn tất</title>
+</head>
+
+<body class="bg-extra-light">
+	<!-- main header menu -->
+	<header id="enduser-header" class="bg-header">
+		<div class="container-fluid">
+			<nav>
+				<div class="brand">
+					<a class="navbar-brand" href="index.html">
+						<img src="./img/logo.png" alt="Main logo" />
+					</a>
+				</div>
+				<ul>
+					<li class="dropdown">
+						<a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-globe"></i> Vietnamese
+						</a>
+						<div class="dropdown-menu bg-header" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Tiếng Anh</a>
+							<a class="dropdown-item" href="#">Tiếng Việt</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Ngôn ngữ khác</a>
+						</div>
+					</li>
+					<li>
+						<a href="end_user_profile.html"><i class="fas fa-user"></i> Nguyễn Văn Anh </a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- posted -->
+	<section id="profile-user" class="py-5 user-coming user-done pr-5">
+		<div class="container-fluid">
+			<div class="row">
+				<aside class="col-lg-3">
+					<ul class="nav-user">
+						<li>
+							<a href="end_user_profile.html"> <i class="fas fa-user"></i> Nguyễn Văn Anh</a>
+						</li>
+						<li>
+							<a href="end_user_profile.html"><i class="fas fa-id-card-alt"></i> Hồ sơ </a>
+						</li>
+						<li>
+							<a href="end_user_book_room.html"><i class="far fa-calendar-check"></i> Đặt phòng của tôi
+							</a>
+						</li>
+						<li>
+							<a href="end_user_coming.html" class="active"><i class="far fa-star"></i> Danh sách yêu thích </a>
+						</li>
+						<li>
+							<a href="end_user_notification.html"><i class="fas fa-envelope-open-text"></i> Thông báo
+							</a>
+						</li>
+						<li>
+							<a href="end_user_all.html"><i class="fas fa-gifts"></i> Điểm thưởng </a>
+						</li>
+						<li>
+							<a href="end_user_posted.html"><i class="fas fa-comment-alt"></i> Nhận xét</a>
+						</li>
+					</ul>
+				</aside>
+				<main class="col-lg-9 bg-white p-4">
+					<!-- menu  filter-->
+					<div class="header-menu d-flex justify-content-between align-items-center">
+						<ul class="main-menu menu">
+							<li>
+								<a href="end_user_coming.html">Sắp tới</a>
+							</li>
+							<li>
+								<a href="end_user_done.html" class="active">Hoàn Tất</a>
+							</li>
+							<li>
+								<a href="end_user_cancel.html">Đã Hủy</a>
+							</li>
+						</ul>
+						<ul class="filter-menu menu">
+								<li class="font-weight-bold">
+									Sắp xếp theo
+								</li>
+							<li>
+								<a href="#" class="active">Ngày đặt phòng</a>
+							</li>
+							<li>
+								<a href="#">Ngày nhận phòng</a>
+							</li>
+						</ul>
+					</div>
+					<!-- seach box -->
+					<div class="search">
+						<form action="">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Mã đặt phòng" />
+							</div>
+							<input type="submit" class="bg-light rounded p-2 px-3 border-0 text-white" value="Tìm kiếm" />
+							<a href="#" class="bg-red rounded p-2 px-3 border-0 text-white">Xóa</a>
+						</form>
+					</div>
+					<!-- list hotels -->
+					<div class="list-rooms">
+						<!-- room 1 -->
+						<div class="room my-5 border border-info rounded">
+							<div class="room-header p-3 bg-extra-light rounded d-flex justify-content-between
+                   align-items-center border border-light">
+								<h6 class="name mb-0 font-weight-bold">
+									Khách Sạn Golden Charm Hà Nội (Hanoi Golden Charm Hotel)
+								</h6>
+								<div>
+									<a href="#" class="view-hotel">
+										Xem khách sạn
+									</a>
+								</div>
+							</div>
+							<!-- room details -->
+							<div class="room-info p-4">
+								<div class="main-info d-flex justify-content-between">
+									<div class="left-info d-flex justify-content-between">
+										<div>
+											<a href="#"><img src="./img/user_room.png" alt="Mandala room hotel" class="mr-4" /></a>
+
+										</div>
+										<div>
+											<p class="small font-weight-bold">
+												26 thg 2 2020 - 27 thg 2 2020
+											</p>
+											<p class="mt-2 small">
+												1 x 1 người trong phòng tập thể 6 giường - Nam & Nữ
+											</p>
+											<p class="small">
+												(1 Person in 6-Bed Dormitory - Mixed)
+											</p>
+											<p class="font-weight-bold">
+												1 đêm
+											</p>
+										</div>
+									</div>
+									<div class="right-info price">
+										<p class="real-price line-through">
+											162.205 ₫
+										</p>
+										<p class="font-weight-bold text-danger sale-price">
+											66.096 đ
+										</p>
+									</div>
+								</div>
+								<hr />
+								<div class="choice d-flex justify-content-between">
+									<div></div>
+									<div>
+										<p class="large float-right">
+											Tổng tiền:
+											<span class="font-weight-bold text-danger">
+												308.475đ</span>
+										</p>
+										<div class="clearfix"></div>
+										<div class="form-inline">
+											<a href="end_user_rebook_room.html" class="btn btn-info">ĐẶT LẠI PHÒNG</a>
+											<a type="button" class="btn btn-success ml-2 text-white" data-toggle="modal"
+												data-target="#comment-modal-1">
+												ĐÁNH GIÁ
+											</a>
+											<!-- The Modal -->
+											<div class="modal fade" id="comment-modal-1">
+												<div class="modal-dialog modal-xl">
+													<div class="modal-content">
+														<!-- Modal Header -->
+														<div class="modal-header bg-extra-light">
+															<h6 class="modal-title">
+																Đánh giá của bạn về Khách sạn
+																<span class="name-hotel">Quat Lam 69</span>
+															</h6>
+															<button type="button" class="close" data-dismiss="modal">
+																<i class="fas fa-times"></i>
+															</button>
+														</div>
+
+														<!-- Modal body -->
+														<div class="modal-body py-2 pb-5">
+															<div class="content row">
+																<div class="mesure mt-4 col-lg-6">
+																	<p class="font-weight-bold">
+																		Mức độ hài lòng của quý khách
+																	</p>
+																	<form action="">
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure-1" class="form-control " />
+																			<label for="mesure-1">
+																				&nbsp;<i class="fas fa-grin-hearts text-success mr-2 fa-2x"></i>Trên cả tuyệt
+																				vời</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure-2" class="form-control" />
+																			<label for="mesure-2">&nbsp;<i
+																					class="far fa-smile-beam text-success mr-2 fa-2x"></i>
+																				Không thể tin nổi</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure-3" class="form-control" />
+																			<label for="mesure-3">&nbsp;
+																				<i class="far fa-smile-wink text-warning fa-2x mr-2"></i>Quá ngạc nhiên</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure-4" class="form-control" />
+																			<label for="mesure-4">&nbsp;<i
+																					class="far fa-surprise fa-2x text-warning mr-2"></i>Chất</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure-5" class="form-control" />
+																			<label for="mesure-5">&nbsp;<i class="far fa-grin fa-2x mr-2 text-danger"></i>Hài
+																				lòng</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure-6" class="form-control" />
+																			<label for="mesure-6">&nbsp;<i
+																					class="far fa-meh-rolling-eyes fa-2x text-danger mr-2"></i>Bình thường</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure-7" class="form-control" />
+																			<label for="mesure-7">&nbsp;<i
+																					class="far fa-tired fa-2x text-primary mr-2"></i>Không tốt</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure-8" class="form-control" />
+																			<label for="mesure-8">&nbsp;<i class="fas fa-angry text-danger fa-2x mr-2"></i>Dở
+																				tệ</label>
+																		</div>
+																	</form>
+																</div>
+																<form action="" class="col-lg-6 mt-3">
+																	<div class="form-group form-msg">
+																		<label for="msg_1" class="d-block my-2">Vui lòng nhập nội dung bằng tiếng Việt
+																			hoặc tiếng Anh</label>
+																		<textarea name="" id="msg_1" cols="45" rows="5" class="form-control">
+																			</textarea>
+																	</div>
+																	<div class="form-group">
+																		<input type="checkbox" name="" id="terms_1" class="form-control" />
+																		<label for="terms_1" class="small">
+																			&nbsp; Tôi đồng ý với
+																			<span class="text-primary font-weight-bold">&nbsp;
+																				<a href="#">điều khoản & điều kiện</a>
+																				&nbsp;
+																			</span>
+																			khi gửi đánh giá này
+																		</label>
+																	</div>
+																	<input type="submit" value="Gửi đánh giá" class="btn btn-block btn-info w-70 mt-3" />
+																</form>
+															</div>
+														</div>
+														<!-- end modal body -->
+													</div>
+												</div>
+											</div>
+											<!--  -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- room 2 -->
+						<div class="room my-5 border border-info rounded">
+							<div class="room-header p-3 bg-extra-light rounded d-flex justify-content-between
+                   align-items-center border border-light">
+								<h6 class="name mb-0 font-weight-bold">
+									Khách Sạn Golden Charm Hà Nội (Hanoi Golden Charm Hotel)
+								</h6>
+								<div>
+									<a href="#" class="view-hotel">
+										Xem khách sạn
+									</a>
+								</div>
+							</div>
+							<!-- room details -->
+							<div class="room-info p-4">
+								<div class="main-info d-flex justify-content-between">
+									<div class="left-info d-flex justify-content-between">
+										<div>
+											<a href="#"><img src="./img/user_room.png" alt="Mandala room hotel" class="mr-4" /></a>
+
+										</div>
+										<div>
+											<p class="small font-weight-bold">
+												26 thg 2 2020 - 27 thg 2 2020
+											</p>
+											<p class="small">
+												1 x 1 người trong phòng tập thể 6 giường - Nam & Nữ
+											</p>
+											<p class="small">
+												(1 Person in 6-Bed Dormitory - Mixed)
+											</p>
+											<p class="font-weight-bold">
+												1 đêm
+											</p>
+										</div>
+									</div>
+									<div class="right-info price">
+										<p class="real-price line-through">
+											162.205 ₫
+										</p>
+										<p class="font-weight-bold text-danger sale-price">
+											66.096 đ
+										</p>
+									</div>
+								</div>
+								<hr />
+								<div class="choice d-flex justify-content-between">
+									<div></div>
+									<div>
+										<p class="large float-right">
+											Tổng tiền:
+											<span class="font-weight-bold text-danger">
+												308.475đ</span>
+										</p>
+										<div class="clearfix"></div>
+										<div class="form-inline">
+											<a href="end_user_book_room.html" class="btn btn-info">ĐẶT LẠI PHÒNG</a>
+											<a type="button" class="btn btn-success ml-2 text-white" data-toggle="modal"
+												data-target="#comment-modal-2">
+												ĐÁNH GIÁ
+											</a>
+											<!-- The Modal -->
+											<div class="modal fade" id="comment-modal-2">
+												<div class="modal-dialog modal-xl">
+													<div class="modal-content">
+														<!-- Modal Header -->
+														<div class="modal-header bg-extra-light">
+															<h6 class="modal-title">
+																Đánh giá của bạn về Khách sạn
+																<span class="name-hotel">Quat Lam 69</span>
+															</h6>
+															<button type="button" class="close" data-dismiss="modal">
+																<i class="fas fa-times"></i>
+															</button>
+														</div>
+
+														<!-- Modal body -->
+														<div class="modal-body py-2 pb-5">
+															<div class="content row">
+																<div class="mesure mt-4 col-lg-6">
+																	<p class="font-weight-bold">
+																		Mức độ hài lòng của quý khách
+																	</p>
+																	<form action="">
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure_2-1"
+																				class="form-control " />
+																			<label for="mesure_2-1">
+																				&nbsp;
+																				<i class="fas fa-grin-hearts text-success mr-2 fa-2x"></i>
+																				Trên cả tuyệt vời</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure_2-2" class="form-control" />
+																			<label for="mesure_2-2">&nbsp;<i
+																					class="far fa-smile-beam text-success mr-2 fa-2x"></i>
+																				Không thể tin nổi</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure_2-3" class="form-control" />
+																			<label for="mesure_2-3">&nbsp;
+																				<i class="far fa-smile-wink text-warning fa-2x mr-2"></i>Quá ngạc nhiên</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure_2-4" class="form-control" />
+																			<label for="mesure_2-4">&nbsp;<i
+																					class="far fa-surprise fa-2x text-warning mr-2"></i>Chất</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure_2-5" class="form-control" />
+																			<label for="mesure_2-5">&nbsp;<i
+																					class="far fa-grin fa-2x mr-2 text-danger"></i>Hài lòng</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure_2-6" class="form-control" />
+																			<label for="mesure_2-6">&nbsp;<i
+																					class="far fa-meh-rolling-eyes fa-2x text-danger mr-2"></i>Bình thường</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure_2-7" class="form-control" />
+																			<label for="mesure_2-7">&nbsp;<i
+																					class="far fa-tired fa-2x text-primary mr-2"></i>Không tốt</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure_2-8" class="form-control" />
+																			<label for="mesure_2-8">&nbsp;<i
+																					class="fas fa-angry text-danger fa-2x mr-2"></i>Dở tệ</label>
+																		</div>
+																	</form>
+																</div>
+																<form action="" class="colg-lg-6 mt-3">
+																	<div class="form-group form-msg">
+																		<label for="msg_2" class="my-1 d-block">Vui lòng nhập nội dung bằng tiếng Việt
+																			hoặc tiếng Anh</label>
+																		<textarea name="" id="msg_2" cols="45" rows="5" class="form-control">
+																			</textarea>
+																	</div>
+																	<div class="form-group">
+																		<input type="checkbox" name="" id="terms_2" class="form-control" />
+																		<label for="terms_2" class="small">
+																			&nbsp; Tôi đồng ý với
+																			<span class="text-primary font-weight-bold">&nbsp;
+																				<a href="#">điều khoản & điều kiện</a>
+																				&nbsp;
+																			</span>
+																			khi gửi đánh giá này
+																		</label>
+																	</div>
+																	<input type="submit" value="Gửi đánh giá" class="btn btn-block btn-info w-70 mt-3" />
+																</form>
+															</div>
+														</div>
+														<!-- end modal body -->
+													</div>
+												</div>
+											</div>
+											<!--  -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- room 3 -->
+						<div class="room my-5 border border-info rounded">
+							<div class="room-header p-3 bg-extra-light rounded d-flex justify-content-between
+                   align-items-center border border-light">
+								<h6 class="name mb-0 font-weight-bold">
+									Khách Sạn Golden Charm Hà Nội (Hanoi Golden Charm Hotel)
+								</h6>
+								<div>
+									<a href="#" class="view-hotel">
+										Xem khách sạn
+									</a>
+								</div>
+							</div>
+							<!-- room details -->
+							<div class="room-info p-4">
+								<div class="main-info d-flex justify-content-between">
+									<div class="left-info d-flex justify-content-between">
+										<div>
+											<a href="#"> <img src="./img/user_room.png" alt="Mandala room hotel" class="mr-4" /></a>
+
+										</div>
+										<div>
+											<p class="small font-weight-bold">
+												26 thg 2 2020 - 27 thg 2 2020
+											</p>
+											<p class="small">
+												1 x 1 người trong phòng tập thể 6 giường - Nam & Nữ
+											</p>
+											<p class="small">
+												(1 Person in 6-Bed Dormitory - Mixed)
+											</p>
+											<p class="font-weight-bold">
+												1 đêm
+											</p>
+										</div>
+									</div>
+									<div class="right-info price">
+										<p class="real-price line-through">
+											162.205 ₫
+										</p>
+										<p class="font-weight-bold text-danger sale-price">
+											66.096 đ
+										</p>
+									</div>
+								</div>
+								<hr />
+								<div class="choice d-flex justify-content-between">
+									<div></div>
+									<div>
+										<p class="large float-right">
+											Tổng tiền:
+											<span class="font-weight-bold text-danger">
+												308.475đ</span>
+										</p>
+										<div class="clearfix"></div>
+										<div class="form-inline">
+											<a href="end_user_book_room.html" class="btn btn-info">ĐẶT LẠI PHÒNG</a>
+											<a type="button" class="btn btn-success ml-2 text-white" data-toggle="modal"
+												data-target="#comment-modal-3">
+												ĐÁNH GIÁ
+											</a>
+											<!-- The Modal -->
+											<div class="modal fade" id="comment-modal-3">
+												<div class="modal-dialog modal-xl">
+													<div class="modal-content">
+														<!-- Modal Header -->
+														<div class="modal-header bg-extra-light">
+															<h6 class="modal-title">
+																Đánh giá của bạn về Khách sạn
+																<span class="name-hotel">Quat Lam 69</span>
+															</h6>
+															<button type="button" class="close" data-dismiss="modal">
+																<i class="fas fa-times"></i>
+															</button>
+														</div>
+
+														<!-- Modal body -->
+														<div class="modal-body py-2 pb-5">
+															<div class="content row">
+																<div class="mesure mt-4 col-lg-6">
+																	<p class="font-weight-bold">
+																		Mức độ hài lòng của quý khách
+																	</p>
+																	<form action="">
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure_3-1"
+																				class="form-control " />
+																			<label for="mesure_3-1">
+																				&nbsp;
+																				<i class="fas fa-grin-hearts text-success mr-2 fa-2x"></i>
+																				Trên cả tuyệt vời</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure_3-2" class="form-control" />
+																			<label for="mesure_3-2">&nbsp;
+																				<i class="far fa-smile-beam text-success mr-2 fa-2x"></i>
+																				Không thể tin nổi</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure_3-3" class="form-control" />
+																			<label for="mesure_3-3">&nbsp;
+																				<i class="far fa-smile-wink text-warning fa-2x mr-2"></i>Quá ngạc nhiên</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure_3-4" class="form-control" />
+																			<label for="mesure_3-4">&nbsp;<i
+																					class="far fa-surprise fa-2x text-warning mr-2"></i>Chất</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure_3-5" class="form-control" />
+																			<label for="mesure_3-5">&nbsp;<i
+																					class="far fa-grin fa-2x mr-2 text-danger"></i>Hài lòng</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure_3-6" class="form-control" />
+																			<label for="mesure_3-6">&nbsp;<i
+																					class="far fa-meh-rolling-eyes fa-2x text-danger mr-2"></i>Bình thường</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure_3-7" class="form-control" />
+																			<label for="mesure_3-7">&nbsp;<i
+																					class="far fa-tired fa-2x text-primary mr-2"></i>Không tốt</label>
+																		</div>
+																		<div class="form-group">
+																			<input type="radio" name="pleasant-mesure" id="mesure_3-8" class="form-control" />
+																			<label for="mesure_3-8">&nbsp;<i
+																					class="fas fa-angry text-danger fa-2x mr-2"></i>Dở tệ</label>
+																		</div>
+																	</form>
+																</div>
+																<form action="" class="col-lg-6 mt-4">
+																	<div class="form-group form-msg">
+																		<label for="msg_3" class="my-1 d-block">Vui lòng nhập nội dung bằng tiếng Việt
+																			hoặc tiếng Anh</label>
+
+																		<textarea name="" id="msg_3" cols="45" rows="5" class="form-control d-block">
+																			</textarea>
+																	</div>
+																	<div class="form-group">
+																		<input type="checkbox" name="" id="terms_3" class="form-control" />
+																		<label for="terms_3" class="small">
+																			&nbsp; Tôi đồng ý với
+																			<span class="text-primary font-weight-bold">&nbsp;
+																				<a href="#">điều khoản & điều kiện</a>
+																				&nbsp;
+																			</span>
+																			khi gửi đánh giá này
+																		</label>
+																	</div>
+																	<input type="submit" value="Gửi đánh giá" class="btn btn-block  btn-info w-70 mt-3" />
+																</form>
+															</div>
+														</div>
+														<!-- end modal body -->
+													</div>
+												</div>
+											</div>
+											<!--  -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end -->
+					</div>
+				</main>
+			</div>
+		</div>
+	</section>
+	<!-- end -->
+	<!-- sign up bottom section -->
+
+	<section id="sign-up-bottom" class="text-white">
+		<div class="container py-2">
+			<div class="inner row">
+				<form class="form-inline col-lg-6">
+					<div class="form-group mb-2">
+						<input type="email" class="form-control" id="" placeholder="Nhập email..." />
+					</div>
+					<button type="submit" class="btn btn-logo mb-2">Đăng ký</button>
+				</form>
+				<div class="sign-up-endow col-lg-5 mt-2">
+					<h6 class="font-weight-bold">
+						Các deal giảm giá đến 60% sẽ được gửi đến inbox của bạn
+					</h6>
+					<p class="small">
+						Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản & Điều Kiện và
+						Chính Sách Bảo Mật của chúng tôi
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- footer main section -->
+	<footer id="main-footer" class="pt-5">
+		<div class="container">
+			<div class="boxes">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="./img/logo.png" alt="logo bottom" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Trụ sở: Tầng 3 Grand Plza
+						</a>
+						<a class="small d-block">
+							117 Trần Duy Hưng, Q. Cầu Giấy, TP Hà Nội
+						</a>
+					</li>
+					<li class="py-1">
+						<a href="#">Tel: (84-4) 3555.8999</a>
+					</li>
+					<li>
+						<a href="#">
+							Email: contact@mandala.vn
+						</a>
+					</li>
+				</ul>
+
+				<ul>
+					<li>
+						<h3>Về Mandala INN</h3>
+					</li>
+					<li>
+						<a href="#">Về chúng tôi</a>
+					</li>
+					<li>
+						<a href="#">Hợp tác cùng chúng tôi</a>
+					</li>
+					<li>
+						<a href="#">Cơ hội nghề nghiệp</a>
+					</li>
+					<li>
+						<a href="#">Cơ hội nghề nghiệp</a>
+					</li>
+					<li>
+						<a href="#">Cơ hội nghề nghiệp</a>
+					</li>
+				</ul>
+
+				<ul>
+					<li>
+						<h3>Đối tác</h3>
+					</li>
+					<li>
+						<a href="#">Đối tác thanh toán</a>
+					</li>
+					<li>
+						<a href="#">Chương trình đại lý</a>
+					</li>
+					<li>
+						<a href="#">Chương trình giao lưu</a>
+					</li>
+					<li>
+						<a href="#">Cơ hội nghề nghiệp</a>
+					</li>
+					<li>
+						<a href="#">Cơ hội nghề nghiệp</a>
+					</li>
+				</ul>
+
+				<ul>
+					<li>
+						<h3>Điều khoản</h3>
+					</li>
+					<li>
+						<a href="#">Điều khoản sử dụng</a>
+					</li>
+					<li>
+						<a href="#">Quyền riêng tư</a>
+					</li>
+					<li>
+						<a href="#">Chính sách bảo mật</a>
+					</li>
+					<li>
+						<a href="#">Cơ hội nghề nghiệp</a>
+					</li>
+					<li>
+						<a href="#">Cơ hội nghề nghiệp</a>
+					</li>
+				</ul>
+
+				<ul>
+					<li>
+						<h3>Tải ứng dụng</h3>
+					</li>
+					<li class="app">
+						<a href="#"><i class="fas fa-qrcode fa-2x"></i></a>
+						<a href="#"><i class="fab fa-apple fa-3x"></i></a>
+						<a href="#"><i class="fab fa-google-play fa-2x"></i></a>
+					</li>
+					<li>
+						<h3 class="mt-3">Kết nối với chúng tôi</h3>
+					</li>
+					<li>
+						<div class="social">
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-facebook"></i></a>
+							<a href="#"><img src="./img/zalo.png" alt="Mandala Zalo" /></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="copy-right text-center bg-copy-right">
+			<div class="container">
+				<p>
+					Copyright &copy; 2020 Mandala INN. All rights reserved
+				</p>
+			</div>
+		</div>
+	</footer>
+	<!-- js boostrap -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>

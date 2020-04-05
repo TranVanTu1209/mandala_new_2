@@ -1,0 +1,391 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+    integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/tablets.css" />
+  <link rel="stylesheet" href="./css/mobile.css" />
+  <link rel="icon" href="logo.ico" type="image/x-icon" />
+  <title>Vendor | Các phòng của khách sạn của</title>
+</head>
+
+<body class="bg-extra-light">
+  <!-- main header menu -->
+  <header id="enduser-header" class="bg-header">
+    <div class="container-fluid">
+      <nav>
+        <div class="brand">
+          <a class="navbar-brand" href="index.html">
+            <img src="./img/logo.png" alt="Main logo" />
+          </a>
+        </div>
+
+        <ul>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-globe"></i> Vietnamese
+            </a>
+            <div class="dropdown-menu bg-header" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Tiếng Anh</a>
+              <a class="dropdown-item" href="#">Tiếng Việt</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Ngôn ngữ khác</a>
+            </div>
+          </li>
+          <li>
+            <a href="vendor_hotel_acc.html"><i class="fas fa-user"></i> Trần Văn Tú </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- The Modal -->
+  <div class="modal fade" id="delete-room">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h5 class="modal-title text-danger"><i class="fas fa-exclamation"></i> Phòng sẽ bị xóa</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form action="">
+            <input type="submit" value="Đồng ý" class="btn btn-block btn-sm btn-success">
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- profile -->
+  <section id="profile-user" class="py-5 vendor-my-hotel-rooms pr-5">
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-lg-3">
+          <ul class="nav-user">
+            <li>
+              <a href="#"> <i class="fas fa-user"></i> Trần Văn Tú</a>
+            </li>
+            <li>
+              <a href="vendor_hotel_acc.html"><i class="fas fa-id-card-alt"></i> Hồ sơ </a>
+            </li>
+            <li>
+              <a href="vendor_my_hotels.html"><i class="fas fa-hotel"></i> Quản lý các khách sạn
+
+              </a>
+            </li>
+            <li>
+              <a href="vendor_my_hotel_rooms.html" class="active"><i class="fas fa-tasks"></i> Quản lý các phòng bán
+              </a>
+            </li>
+            <li>
+              <a href="vendor_manage_order.html"><i class="fas fa-clipboard-list"></i> Quản lý các đơn đặt phòng
+
+              </a>
+            </li>
+            <li>
+              <a href="vendor_report_statistic.html"><i class="fas fa-flag"></i> Báo cáo thống kê
+              </a>
+            </li>
+            <li>
+              <a href="report_my_hotels.html"><i class="fas fa-comment-alt"></i> Đánh giá</a>
+            </li>
+          </ul>
+        </aside>
+        <main class="col-lg-9 bg-white">
+          <!--  list vendor hotels -->
+          <div class="top d-flex justify-content-between align-items-center p-4">
+            <h5 class="text-primary font-weight-bold">
+              Những phòng của Golden Charm Hà Nội
+            </h5>
+            <form action="" class="form-inline">
+              <div class="form-group">
+                <select name="filter-hotel" id="" class="form-control">
+                  <option value="hotel_1">Khách sạn Golden Charm</option>
+                  <option value="hotel_2">Khách sạn VinPearl</option>
+                  <option value="hotel_3">Khách sạn Miletropole</option>
+                </select>
+              </div>
+
+            </form>
+          </div>
+
+          <div class="list-available-hotels">
+            <!-- room 1 -->
+            <div class="row p-4">
+              <div class="col-lg-3">
+                <a href="#"> <img src="./img/combo_1.jpg" class="w-100 rounded mb-2" alt="Mandala Hotel">
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <h6 class="name font-weight-bold"><a href="vendor_my_hotel_room_detail.html" class="text-dark">
+                    Phòng Deluxe view mặt phố
+                  </a></h6>
+                <p class="small room-type">
+                  Phòng đôi, hút thuốc
+                </p>
+                <p class="small amount-room">
+                  Số lượng <span class="number-amount">02</span>
+                </p>
+
+                <form action="" class="form-inline">
+                  <div class="form-group">
+                    <label for="status"></label>
+                    <select name="status-room" id="status" class="form-control">
+                      <option value="yes">Còn phòng</option>
+                      <option value="no">Hết phòng</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-3 py-3 text-right">
+                <div class="price py-1">
+                  <h4 class="large text-danger">
+                    524.374đ
+                  </h4>
+                </div>
+                <button class="bg-red p-2 px-3 rounded border-0" data-toggle="modal" data-target="#delete-room">
+                  XÓA PHÒNG
+                </button>
+              </div>
+            </div>
+            <hr>
+            <!--room 2  -->
+            <div class="row p-4">
+              <div class="col-lg-3">
+                <a href="#"> <img src="./img/combo_4.jpg" class="w-100 rounded mb-2" alt="Mandala Hotel">
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <h6 class="name font-weight-bold"><a href="vendor_my_hotel_room_detail.html" class="text-dark">
+                    Phòng view biển trên cao
+                  </a></h6>
+                <p class="small room-type">
+                  Phòng ba, tiện nghi đầy đủ
+                </p>
+                <p class="small amount-room">
+                  Số lượng <span class="number-amount">04</span>
+                </p>
+
+                <form action="" class="form-inline">
+                  <div class="form-group">
+                    <label for="status"></label>
+                    <select name="status-room" id="status" class="form-control">
+                      <option value="yes">Còn phòng</option>
+                      <option value="no" selected>Hết phòng</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-3 py-3 text-right">
+                <div class="price py-1">
+                  <h4 class="large text-danger">
+                    524.374đ
+                  </h4>
+                </div>
+                <button class="bg-red p-2 px-3 rounded border-0" data-toggle="modal" data-target="#delete-room">
+                  XÓA PHÒNG
+                </button>
+              </div>
+            </div>
+            <hr>
+            <!-- room 3 -->
+            <div class="row p-4">
+              <div class="col-lg-3">
+                <a href="#"> <img src="./img/combo_2.jpg" class="w-100 rounded mb-2" alt="Mandala Hotel">
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <h6 class="name font-weight-bold"><a href="vendor_my_hotel_room_detail.html" class="text-dark">
+                    Phòng dành cho tập thể
+                  </a></h6>
+                <p class="small room-type">
+                  Phòng đơn, có wifi, điều hòa nóng lạnh
+                </p>
+                <p class="small amount-room">
+                  Số lượng <span class="number-amount">06</span>
+                </p>
+
+                <form action="" class="form-inline">
+                  <div class="form-group">
+                    <label for="status"></label>
+                    <select name="status-room" id="status" class="form-control">
+                      <option value="yes">Còn phòng</option>
+                      <option value="no">Hết phòng</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-3 py-3 text-right">
+                <div class="price py-1">
+                  <h4 class="large text-danger">
+                    524.374đ
+                  </h4>
+                </div>
+                <button class="bg-red p-2 px-3 rounded border-0" data-toggle="modal" data-target="#delete-room">
+                  XÓA PHÒNG
+                </button>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <div class="col-lg-12 py-5">
+            <a href="#" class="btn btn-success">THÊM mới phòng <i class="fas fa-plus-circle ml-3"></i></a>
+          </div>
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer main section -->
+  <footer id="main-footer" class="pt-5">
+    <div class="container">
+      <div class="boxes">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./img/logo.png" alt="logo bottom" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Trụ sở: Tầng 3 Grand Plza
+            </a>
+            <a class="small d-block">
+              117 Trần Duy Hưng, Q. Cầu Giấy, TP Hà Nội
+            </a>
+          </li>
+          <li class="py-1">
+            <a href="#">Tel: (84-4) 3555.8999</a>
+          </li>
+          <li>
+            <a href="#">
+              Email: contact@mandala.vn
+            </a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h3>Về Mandala INN</h3>
+          </li>
+          <li>
+            <a href="#">Về chúng tôi</a>
+          </li>
+          <li>
+            <a href="#">Hợp tác cùng chúng tôi</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h3>Đối tác</h3>
+          </li>
+          <li>
+            <a href="#">Đối tác thanh toán</a>
+          </li>
+          <li>
+            <a href="#">Chương trình đại lý</a>
+          </li>
+          <li>
+            <a href="#">Chương trình giao lưu</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h3>Điều khoản</h3>
+          </li>
+          <li>
+            <a href="#">Điều khoản sử dụng</a>
+          </li>
+          <li>
+            <a href="#">Quyền riêng tư</a>
+          </li>
+          <li>
+            <a href="#">Chính sách bảo mật</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h3>Tải ứng dụng</h3>
+          </li>
+          <li class="app">
+            <a href="#"><i class="fas fa-qrcode fa-2x"></i></a>
+            <a href="#"><i class="fab fa-apple fa-3x"></i></a>
+            <a href="#"><i class="fab fa-google-play fa-2x"></i></a>
+          </li>
+          <li>
+            <h3 class="mt-3">Kết nối với chúng tôi</h3>
+          </li>
+          <li>
+            <div class="social">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><img src="./img/zalo.png" alt="Mandala Zalo" /></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy-right text-center bg-copy-right">
+      <div class="container">
+        <p>
+          Copyright &copy; 2020 Mandala INN. All rights reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- js boostrap -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

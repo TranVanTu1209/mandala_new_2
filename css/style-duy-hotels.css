@@ -1,0 +1,507 @@
+/**
+ * /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3)
+ *
+ * @format
+ */
+
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+main.col-md-7.contact-hotel.bg-white {
+	margin-bottom: 20px;
+}
+.intro-menu .list-breadcrums-contact span.previ {
+	font-size: 20px;
+	font-weight: 400;
+	color: #777777;
+}
+.list-breadcrums-contact span.active {
+	font-size: 20px;
+	font-weight: 400;
+	color: #000000;
+}
+.contact-hotel {
+	-webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+	padding: 45px 121px;
+}
+.form-group-name {
+	padding-top: 57px;
+}
+.form-group-number {
+	padding-top: 51px;
+}
+.form-group-email {
+	padding-top: 66px;
+}
+.form-group-text {
+	width: 100%;
+	padding-top: 66px;
+}
+.form-group-text textarea#text {
+	width: 100%;
+	height: 200px;
+}
+.form-group-text button.btn.btn-primary.float-right {
+	background-color: #488bf8;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 11px 54px;
+	margin-top: 25px;
+}
+.form-group-text textarea {
+	border: 1px solid #dddfe2;
+}
+button.btn.btn-primary.btn-seen.float-right {
+	color: white;
+	border: 4px;
+	height: 41px;
+	background: #488bf8;
+	width: 128px;
+	font-size: 14px;
+	font-weight: 600;
+	margin-top: 20px;
+}
+.contact-detail {
+	height: auto;
+	background: white;
+	padding: 29px 32px;
+}
+.contact-detail img {
+	width: 100%;
+	padding-bottom: 25px;
+	border-bottom: 1px dotted #707070;
+}
+.contact-detail .contact-desc {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 23px;
+	padding-top: 29px;
+}
+.contact-detail .contact-desc span {
+	color: #488bf8;
+}
+@media only screen and (max-width: 1024px) {
+	.container-fluid.intro-menu.pl-3.py-5.mt-3 {
+		padding: 18px 0px !important;
+	}
+	main.col-md-7.contact-hotel.bg-white {
+		padding: 45px 40px;
+		margin-bottom: 30px;
+		font-size: 13px;
+	}
+	.contact-detail {
+		font-size: 13px;
+		padding: 29px 11px;
+	}
+	.contact-detail .contact-desc {
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 22px;
+	}
+	select#input-contact {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	main.col-md-7.contact-hotel.bg-white {
+		padding: 30px 20px;
+	}
+	.contact-detail .contact-desc {
+		font-size: 11px;
+		font-weight: 400;
+		line-height: 16px;
+	}
+	.container-fluid.intro-menu.pl-3.py-5.mt-3 {
+		margin-left: 63px;
+	}
+	.intro-menu .list-breadcrums-contact span.previ {
+		font-size: 16px;
+		font-weight: 400;
+		color: #777777;
+	}
+	.list-breadcrums-contact span.active {
+		font-size: 16px;
+		font-weight: 400;
+		color: #000000;
+	}
+	.wd-bread {
+		width: 232px;
+	}
+}
+@media only screen and (max-width: 414px) {
+	.container-fluid.intro-menu.pl-3.py-5.mt-3 {
+		margin-left: 22px;
+	}
+	.contact-detail {
+		margin-bottom: 20px;
+	}
+}
+
+/* style intro */
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+.intro-header .container {
+	padding-left: 0;
+	padding-right: 0;
+}
+.intro-menu .list-breadcrums span.previ {
+	font-size: 20px;
+	font-weight: 400;
+	color: #777777;
+}
+.list-breadcrums span.active {
+	font-size: 20px;
+	font-weight: 400;
+	color: #000000;
+}
+.main-intro-holte .intro-content .img-center img {
+	width: 75%;
+}
+.intro-content p {
+	line-height: 1.8rem;
+}
+.main-intro-holte .intro-title h1 {
+	font-size: 32px;
+	font-weight: bold;
+	color: #000d08;
+	display: block;
+}
+.main-intro-holte .intro-header {
+	padding-bottom: 18px;
+}
+
+.intro-content b {
+	font-size: 14px;
+	font-weight: 600;
+	color: #000d08;
+	padding-top: 20px;
+	display: block;
+	margin-bottom: 23px;
+	line-height: 30px;
+}
+.intro-content {
+	padding-bottom: 37px;
+	border-bottom: 1px dotted #000d08;
+}
+
+.intro-content q {
+	font-size: 14px;
+	font-weight: 400;
+	color: #000d08;
+	line-height: 30px;
+}
+.intro-footer {
+	padding-top: 40px;
+}
+.intro-footer p {
+	font-size: 14px;
+	font-weight: 400;
+	color: #000d08;
+	line-height: 30px;
+}
+.intro-footer span {
+	color: #488bf8;
+}
+
+.bread-intro {
+	width: 100%;
+}
+@media only screen and (max-width: 500px) {
+	.intro-menu {
+		margin-left: 35px !important;
+	}
+	.bread-intro {
+		width: 92%;
+	}
+}
+/* style report*/
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+section.vendor-report-hotel main,
+section {
+	padding-left: 0 !important;
+}
+.list-report-content .list-content #cars {
+	font-size: 14px;
+	font-weight: 600;
+	color: rgb(29, 29, 32);
+	line-height: 36px;
+	padding: 0px 18px;
+	display: block;
+	margin: 0;
+	height: 38px;
+}
+/* css list-report */
+.list-report-title {
+	height: 66px;
+	overflow: hidden;
+}
+h5.text-primary.p-4.font-weight-bold {
+	float: left;
+}
+select#input {
+	width: auto;
+	float: right;
+	margin: 17px 26px 14px 0px;
+}
+.list-report-content .row .border p {
+	font-size: 14px;
+	font-weight: 600;
+	color: #2a2a2e;
+	line-height: 36px;
+	padding: 0px 18px;
+	display: block;
+	margin: 0;
+}
+.bd.border {
+	float: left;
+}
+.list-report-content .list-content {
+	padding: 40px 25px;
+}
+.pd-content {
+	margin: 0;
+}
+.list-report-content button.btn.btn-primary {
+	font-weight: 600;
+	font-size: 14px;
+	width: 147px;
+	height: 37px;
+	border: 1px solid #488bf8;
+	padding: 8px 26px;
+	margin-left: 20px;
+}
+.list-rp h4 {
+	display: block;
+	margin: 10px 62px;
+	font-size: 18px;
+	font-weight: 400;
+	color: #488bf8;
+}
+.list-rp q {
+	display: block;
+	font-size: 12px;
+	color: #bdbdbd;
+	padding-top: 20px;
+}
+.evaluate {
+	float: left;
+	position: relative;
+	border-radius: 6px;
+	width: 50px;
+	height: 50px;
+	background: #488bf8;
+}
+.evaluate p {
+	color: white;
+	font-size: 28px;
+	font-weight: 600;
+	padding: 4px;
+}
+.evaluate::after {
+	content: "";
+	position: absolute;
+	top: 0px;
+	width: 0;
+	height: 0;
+	border: 10px solid #f0f0f000;
+	border-top-color: #488bf8;
+	right: -10px;
+}
+.list-rp-desc {
+	border-radius: 9px;
+	padding: 18px 55px;
+	background-color: #f5f5f5;
+}
+.list-rp-desc b {
+	display: block;
+	padding-bottom: 26px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.list-rp-desc p {
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+	padding-bottom: 26px;
+	margin: 0;
+}
+.list-rp-desc q {
+	padding: 0;
+	display: block;
+	font-size: 12px;
+	font-weight: 400;
+}
+hr.duoi {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	border: 1px;
+	border-top: 1px solid rgb(236, 236, 236);
+}
+hr.tren {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border: 1px;
+	border-top: 2px solid rgb(236, 236, 236);
+}
+.list-report-footer {
+	background: #efefef;
+	padding-top: 35px;
+}
+.list-report-footer ul.pagination li.page-item a {
+	font-size: 16px;
+	font-weight: 400;
+	color: #000d08;
+	display: block;
+	border: none;
+	background-color: unset;
+}
+
+.list-report-footer ul.pagination li.page-item {
+	margin: 0 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+/* responsive */
+@media only screen and (max-width: 992px) {
+	.list-rp q {
+		padding-bottom: 20px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.list-report-footer .report-footer-rg button {
+		width: 194px;
+		height: 34%;
+	}
+}
+@media only screen and (max-width: 618px) {
+	.list-rp q {
+		padding-bottom: 20px;
+	}
+	.list-report-content .row .border p {
+		font-size: 10px;
+	}
+	.list-report-content button.btn.btn-primary {
+		font-size: 10px;
+	}
+}
+@media only screen and (max-width: 540px) {
+	.list-report-content button.btn.btn-primary {
+		margin-left: 10px;
+	}
+}
+@media only screen and (max-width: 526px) {
+	.list-report-content button.btn.btn-primary {
+		font-size: 8px;
+	}
+	.list-report-content .row .border p {
+		font-size: 8px;
+	}
+	.list-report-content button.btn.btn-primary {
+		width: 35%;
+	}
+}
+@media only screen and (max-width: 477px) {
+	.list-report-content button.btn.btn-primary {
+		width: 33%;
+	}
+}
+@media only screen and (max-width: 464px) {
+	.list-report-content button.btn.btn-primary {
+		width: 33%;
+	}
+}
+@media only screen and (max-width: 414px) {
+	.list-report-footer ul.pagination li.page-item a {
+		padding: 4px 9px;
+		font-size: 10px;
+	}
+	.report-footer-lp.float-left p {
+		font: 10px;
+	}
+	.list-report-footer ul.pagination li.page-item {
+		margin: 0 1px;
+	}
+	.list-rp-desc {
+		border-radius: 9px;
+		padding: 18px 17px;
+	}
+	.list-report-footer .report-footer-rg button {
+		width: 139px;
+		height: 34%;
+		font-size: 13px;
+	}
+	.report-footer-rg i {
+		padding: 0px 7px;
+	}
+	.list-report-content .row .border p {
+		padding: 0px 9px;
+	}
+	.list-report-content .list-content #cars {
+		padding: 0px 0px;
+		font-size: 8px;
+	}
+	.list-report-content button.btn.btn-primary {
+		width: 32%;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.list-report-content .list-content {
+		padding: 29px 7px;
+	}
+	.list-report-footer ul.pagination li.page-item a {
+		font-size: 10px;
+	}
+	.list-report-content .row .border p {
+		padding: 0px 4px;
+	}
+	.list-report-content button.btn.btn-primary {
+		width: 30%;
+		margin-left: 14px;
+		padding: 0;
+		font-size: 7px;
+	}
+
+	.list-report-content .row .border p {
+		font-size: 8px;
+	}
+	.list-report-content .list-content #cars {
+		padding: 0px 0px;
+		font-size: 8px;
+	}
+	.list-rp-desc {
+		border-radius: 9px;
+		padding: 18px 12px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.list-report-content button.btn.btn-primary {
+		width: 28%;
+		margin-left: 3px;
+		padding: 0;
+		font-size: 7px;
+	}
+	.list-report-footer ul.pagination li.page-item a {
+		padding: 4px 7px;
+	}
+	.list-rp-desc p {
+		font-size: 12px;
+	}
+	.list-rp-desc b {
+		font-size: 15px;
+	}
+	.list-rp-desc q {
+		font-size: 10px;
+	}
+	.list-rp q {
+		font-size: 11px;
+	}
+	.list-rp h4 {
+		margin: 16px 0px 13px 65px;
+	}
+	.list-report-footer .report-footer-lp p {
+		font-size: 12px;
+	}
+}

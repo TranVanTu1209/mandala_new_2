@@ -1,0 +1,193 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+    integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/tablets.css" />
+  <link rel="stylesheet" href="./css/mobile.css" />
+  <link rel="icon" href="logo.ico" type="image/x-icon" />
+  <title>Đăng ký</title>
+</head>
+
+<body class="bg-extra-light">
+  <!-- main header menu -->
+  <header id="main-header" class="bg-header sign-header">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+          <img src="./img/logo.png" alt="Main logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars fa-2x text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="introduct_my_hotels.html">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a href="news_main.html" class="nav-link">
+                Tin tức
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="endow.html" class="nav-link">
+                Khuyến mại
+              </a>
+            </li>
+            <li>
+              <a href="contact_my_hotels.html" class="nav-link">Liên hệ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-globe"></i> Vietnamese
+              </a>
+              <div class="dropdown-menu bg-header" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Tiếng Anh</a>
+                <a class="dropdown-item" href="#">Tiếng Việt</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Ngôn ngữ khác</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="sign-in.html" class="nav-link"><i class="fas fa-users"></i> Đăng nhập</a>
+            </li>
+            <li class="nav-item">
+              <a href="sign-up.html" class="nav-link active"><i class="fas fa-user-plus"></i> Đăng ký</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- forgot password -->
+  <section id="forgot-password" class="sign-up py-3 mt-4">
+    <div class="container mt-5">
+      <div class="row rounded">
+        <div class="col-lg-1 col-md-0 bg-extra-light"></div>
+        <div class="forgot-box bg-white p-3 px-5 rounded col-lg-5 col-md-6">
+          <h3 class="font-weight-bold text-center mb-4">
+            Tạo tài khoản
+          </h3>
+
+          <div class="continue mb-3">
+            <div class="inner d-flex">
+              <a class="font-weight-bold" href="#">
+                Continue as Đoàn
+              </a>
+              <img src="./img/fotgot_img.jpg" class="rounded" alt="Hotel Mandala" />
+            </div>
+          </div>
+          <!--  -->
+          <div class="text-center tranform py-2">
+            Hoặc
+          </div>
+          <!--  -->
+          <div class="choice-sign-in py-3">
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-4">
+                <button class="sign-mail active small">
+                  <i class="fas fa-envelope"> Email</i>
+                </button>
+
+              </div>
+              <div class="col-sm-4">
+                <button class="sign-phone small">
+                  <i class="fas fa-mobile-alt"></i> Số điện thoại
+                </button>
+
+              </div>
+            </div>
+            <!-- email -->
+            <form action="" class="form-email py-4">
+              <div class="form-group py-2">
+                <input type="email" name="" class="form-control" placeholder="Email" required />
+              </div>
+              <div class="form-group py-2">
+                <input type="text" name="" class="form-control" placeholder="Họ tên" required />
+              </div>
+              <div class="form-group py-2">
+                <input type="password" name="" class="form-control" placeholder="Mật khẩu" required />
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="check-email" name="">
+                <label class="custom-control-label small mt-1" for="check-email">Nhận email về các khuyến mãi độc
+                  quyền từ
+                  Mandala Inn. Tôi có thể bỏ đăng ký bất kỳ lúc nào như đã nêu trong Chính sách Bảo mật.</label>
+              </div>
+              <div class="capcha"></div>
+              <input type="submit" value="Tạo tài khoản" class="border rounded border-primary p-2 d-block" />
+            </form>
+
+            <!-- phone number -->
+            <form action="" class="form-phone py-4 d-none">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="phone-prefix">(+84)</span>
+                </div>
+                <input type="text" class="form-control" placeholder="" aria-label="Phone number"
+                  aria-describedby="phone-prefix" required>
+
+              </div>
+              <div class="form-group py-2">
+                <input type="text" name="" class="form-control" placeholder="Họ tên" required />
+              </div>
+              <div class="form-group py-2">
+                <input type="password" name="" class="form-control" placeholder="Mật khẩu" required />
+              </div>
+              <div class="capcha"></div>
+              <input type="submit" value="Tạo tài khoản" class="border rounded border-primary p-2 d-block" />
+            </form>
+            <p class="small pt-2">
+              Khi đăng kí, tôi đồng ý với các Điều khoản sử dụng và Chính sách bảo mật của Mandala Inn.
+            </p>
+            <hr>
+            <div class="d-flex justify-content-between align-items-center">
+              <p>
+                Bạn đã có tài khoản?
+              </p>
+              <a href="sign-in.html" class="btn btn-outline-primary px-4">Đăng nhập</a>
+            </div>
+          </div>
+          <!--  -->
+
+
+        </div>
+        <div class="col-md-5">
+          <img src="./img/sign_in.png" alt="" class="d-md-block d-none aside-img">
+        </div>
+        <div class="col-md-2 bg-extra-light"></div>
+      </div>
+
+    </div>
+  </section>
+  <!-- js boostrap -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="./js/sign_in_sign_up.js"></script>
+  <script src="./js/toggle_times.js"></script>
+
+</body>
+
+</html>

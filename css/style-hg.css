@@ -1,0 +1,137 @@
+/** @format */
+
+#vendor-policy {
+	background-color: #f5f5f5;
+}
+
+.img-booking p.title-left-text {
+	font-size: 14px;
+}
+.img-booking-content .form-upload .form-center1 {
+	text-align: center;
+}
+.img-booking-content .form-upload .form-center1 button.btn-upload {
+	background-color: #488bf8;
+	cursor: pointer;
+}
+button.btn-upload img {
+	float: left;
+	padding: 15px 5px 5px 5px;
+}
+button.btn-upload p.btn-upload-text {
+	line-height: 40px;
+	color: #ffffff;
+	font-size: 14px;
+	float: right;
+	padding: 5px;
+}
+.form-center2 {
+	background-color: #f5f5f5;
+	margin: 125px 0px 50px 0px;
+}
+.form-center2 p {
+	padding: 40px;
+	line-height: 26px;
+}
+button.btn-continue {
+	background-color: #488bf8;
+	width: 100%;
+	line-height: 60px;
+}
+button.btn-continue a {
+	color: #ffffff;
+	line-height: 60px;
+}
+button.btn-continue a:hover {
+	text-decoration: none;
+}
+.form-alert {
+	background: #f4f8fe;
+	border:1px solid #dddfe2;
+	padding: 30px 30px 20px 30px;
+	margin-bottom: 35px;
+}
+.content-right .form-alert .form-alert-text {
+	font-size: 14px;
+}
+/* vendor 5 */
+.alert-form {
+	margin: 35px 0px;
+	background-color: #d8eed5;
+}
+.alert-form p.alert-form-text {
+	padding: 25px;
+}
+.form-img {
+	margin: 35px 0px;
+}
+.form-img .form-img-item .icon {
+	position: relative;
+	width: 240px;
+	height: 50px;
+	border: 1px solid #dddfe2;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* vendor 6 */
+h4.text-select {
+	font-size: 14px;
+	margin: 15px 0px;
+}
+.select {
+	width: 420px;
+	height: 40px;
+}
+.bell {
+	margin-top: 25px;
+}
+.title-bell {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.title-bell h3.title-bell-text {
+	font-size: 20px;
+	font-weight: 800;
+}
+/* form date */
+/* Style the buttons */
+.btn-date {
+	border: none;
+	outline: none;
+	padding: 10px 16px;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	font-size: 18px;
+	margin: 10px;
+}
+/* Style the active class, and buttons on mouse-over */
+
+.sl-date {
+	width: 70px;
+	height: 50px;
+	border-radius: 5px;
+}
+/* form children */
+.form-children .form-children-text {
+	padding: 10px 0px;
+}
+/* form pet */
+.form-pet .form-pet-text {
+	color: #bdbdbd;
+	width: 620px;
+	padding: 10px 0px;
+}
+
+/* vendor 7 */
+p.form-pay2-text1 {
+	padding-bottom: 30px;
+}
+p.text-bottom-btn {
+	text-align: center;
+	margin-top: 20px;
+}
+section.vendor-payment .title {
+	font-weight: 600 !important;
+}

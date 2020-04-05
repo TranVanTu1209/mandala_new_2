@@ -1,0 +1,433 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+    integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/tablets.css" />
+  <link rel="stylesheet" href="./css/mobile.css" />
+  <link rel="icon" href="logo.ico" type="image/x-icon" />
+  <title>Vendor | Tài khoản khách sạn</title>
+</head>
+
+<body class="bg-extra-light">
+  <!-- main header end user menu -->
+  <header id="enduser-header" class="bg-header">
+    <div class="container-fluid">
+      <nav>
+        <div class="brand">
+          <a class="navbar-brand" href="index.html">
+            <img src="./img/logo.png" alt="Main logo" />
+          </a>
+        </div>
+
+        <ul>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-globe"></i> Vietnamese
+            </a>
+            <div class="dropdown-menu bg-header" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Tiếng Anh</a>
+              <a class="dropdown-item" href="#">Tiếng Việt</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Ngôn ngữ khác</a>
+            </div>
+          </li>
+          <li>
+            <a href="vendor_hotel_acc.html"><i class="fas fa-user"></i> Trần Văn Tú </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- profile -->
+  <section id="profile-user" class="py-5 pr-4">
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-lg-3">
+          <ul class="nav-user">
+            <li>
+              <a href="vendor_hotel_acc.html"> <i class="fas fa-user"></i> Trần Văn Tú</a>
+            </li>
+            <li>
+              <a href="vendor_hotel_acc.html" class="active"><i class="fas fa-id-card-alt"></i> Hồ sơ </a>
+            </li>
+            <li>
+              <a href="vendor_my_hotels.html"><i class="fas fa-hotel"></i> Quản lý các khách sạn
+
+              </a>
+            </li>
+            <li>
+              <a href="vendor_my_hotel_rooms.html"><i class="fas fa-tasks"></i> Quản lý các phòng bán
+              </a>
+            </li>
+            <li>
+              <a href="vendor_manage_order.html"><i class="fas fa-clipboard-list"></i> Quản lý các đơn đặt phòng
+
+              </a>
+            </li>
+            <li>
+              <a href="vendor_report_statistic.html"><i class="fas fa-flag"></i> Báo cáo thống kê
+              </a>
+            </li>
+            <li>
+              <a href="report_my_hotels.html"><i class="fas fa-comment-alt"></i> Đánh giá</a>
+            </li>
+          </ul>
+        </aside>
+        <main class="col-lg-9">
+          <!-- origin profile -->
+          <div class="origin-profile profile mb-4">
+            <div class="header p-5">
+              <h5 class="font-weight-bold text-primary">
+                Tài khoản khách sạn của bạn
+              </h5>
+              <p class="small">
+                Những thông tin này được hiển thị kế bên các đánh giá, xếp
+                hạng, hình ảnh v.v... mà bạn đã chia sẻ công khai. Mọi cập
+                nhật cũng sẽ xuất hiện trong các đóng góp trước đây của bạn.
+              </p>
+            </div>
+            <div class="main-info bg-white p-5">
+              <form action="">
+                <div class="row py-3 img-profile">
+
+                  <label class="col-lg-4">Ảnh hồ sơ</label>
+                  <div class="col-lg-1"></div>
+                  <div class="form-group col-lg-6">
+                    <div class="d-flex img-private">
+                      <img src="./img/profile.jpg" alt="Mandala profile" />
+                      <div class="change-profile ml-5">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" data-toggle="modal" data-target="#get-img"
+                          class="text-primary border border-primary rounded p-2">
+                          <i class="fas fa-camera"></i> Thay đổi hình ảnh
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="get-img">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <!-- Modal Header -->
+                              <div class="modal-header">
+                                <h4 class="modal-title">
+                                  Thay đổi ảnh đại diện
+                                </h4>
+                                <button type="button" class="close" data-dismiss="modal">
+                                  &times;
+                                </button>
+                              </div>
+
+                              <!-- Modal body -->
+                              <div class="modal-body py-5">
+                                <form action="">
+                                  <div class="custom-file mb-3">
+                                    <input type="file" class="custom-file-input" id="customFile" />
+                                    <label class="custom-file-label" for="customFile">Chọn ảnh</label>
+                                  </div>
+                                  <input type="submit" value="Thay đổi"
+                                    class="form-control btn btn-outline-primary pt-1" />
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--  -->
+                        <p class="small mt-3">
+                          Điều đầu tiên người ta thấy là hình của bạn, nên hãy
+                          chọn hình đẹp nhất.
+                        </p>
+                        <!--  -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+                <div class="row py-3">
+                  <label class="col-lg-4" for="name">Tên hiển thị</label>
+                  <div class="col-lg-1"></div>
+                  <div class="form-group col-lg-6">
+                    <input type="text" class="form-control" id="name" />
+                    <p class="small mt-2">
+                      Tên hiển thị của bạn có thể được cập nhật bất cứ lúc nào
+                      bạn muốn.
+                    </p>
+                  </div>
+                </div>
+
+                <!--  -->
+                <div class="row py-3">
+                  <label class="col-lg-4" for="birth-date">Sinh nhật</label>
+                  <div class="col-lg-1"></div>
+                  <div class="form-inline col-lg-6">
+                    <input type="date" name="" id="birth-date" class="form-control" />
+                    <p class="small mt-2">
+                      Chúng tôi sẽ hiển thị thông tin theo độ tuổi, ví dụ:
+                      "25-30"
+                    </p>
+                  </div>
+                </div>
+                <!--  -->
+
+                <div class="row py-3">
+                  <label class="col-lg-4" for="address">Địa chỉ</label>
+                  <div class="col-lg-1"></div>
+                  <div class="form-group col-lg-6">
+                    <input type="text" name="" id="address" class="form-control">
+
+                  </div>
+                </div>
+                <!--  -->
+                <div class="row py-3">
+                  <label class="col-lg-4" for="phone-number" aria-required="true">Số điện thoại</label>
+                  <div class="col-lg-1"></div>
+                  <div class="form-group col-lg-6">
+                    <input type="text" name="" id="phone-number" required class="form-control">
+
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="row py-3">
+                  <label class="col-lg-4" for="phone-number" aria-required="true">Email</label>
+                  <div class="col-lg-1"></div>
+                  <div class="form-group col-lg-6">
+                    <input type="email" name="" id="phone-number" class="form-control">
+
+                  </div>
+                </div>
+                <!--  -->
+                <div class="row py-3">
+                  <label class="col-lg-4">Mật khẩu</label>
+                  <div class="col-lg-1"></div>
+                  <div class="form-inline col-lg-6">
+                    <div class="change-password">
+                      <!-- Button to Open the Modal -->
+                      <button type="button" data-toggle="modal" data-target="#change-password"
+                        class="text-primary border-0 rounded">
+                        Thay đổi mật khẩu
+                      </button>
+
+                      <!-- The Modal -->
+                      <div class="modal fade" id="change-password">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">
+                                Mật khẩu cũ không an toàn ?
+                              </h4>
+                              <button type="button" class="close" data-dismiss="modal">
+                                &times;
+                              </button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body w-90 m-auto">
+                              <form action="">
+                                <div class="form-group">
+                                  <input type="password" placeholder="Mật khẩu mới" name="" id=""
+                                    class="form-control w-100 mb-3" />
+                                </div>
+                                <div class="form-group">
+                                  <input type="password" placeholder="Nhập lại mật khẩu mới" name="" id=""
+                                    class="form-control w-100" />
+                                </div>
+                                <input type="submit" value="Xác nhận"
+                                  class="btn btn-outline-primary btn-block small mt-3" />
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--  -->
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+                <div class="d-flex py-3">
+                  <div class="mr-2">
+                    <button class="bg-secondary p-2 px-5 border-0 rounded text-white font-weight-bold">Hủy</button>
+                  </div>
+                  <div class="form-group mr-2">
+                    <input type="submit" value="Lưu"
+                      class="bg-info p-2 px-5 border-0 rounded text-white font-weight-bold" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </main>
+      </div>
+    </div>
+  </section>
+  <!-- sign up bottom section -->
+
+  <section id="sign-up-bottom" class="text-white">
+    <div class="container py-2">
+      <div class="inner row">
+        <form class="form-inline col-lg-6">
+          <div class="form-group mb-2">
+            <input type="email" class="form-control" id="" placeholder="Nhập email..." />
+          </div>
+          <button type="submit" class="btn btn-logo mb-2">Đăng ký</button>
+        </form>
+        <div class="sign-up-endow col-lg-5 mt-2">
+          <h6 class="font-weight-bold">
+            Các deal giảm giá đến 60% sẽ được gửi đến inbox của bạn
+          </h6>
+          <p class="small">
+            Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản & Điều Kiện và
+            Chính Sách Bảo Mật của chúng tôi
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer main section -->
+  <footer id="main-footer" class="pt-5">
+    <div class="container">
+      <div class="boxes">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./img/logo.png" alt="logo bottom" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Trụ sở: Tầng 3 Grand Plza
+            </a>
+            <a class="small d-block">
+              117 Trần Duy Hưng, Q. Cầu Giấy, TP Hà Nội
+            </a>
+          </li>
+          <li class="py-1">
+            <a href="#">Tel: (84-4) 3555.8999</a>
+          </li>
+          <li>
+            <a href="#">
+              Email: contact@mandala.vn
+            </a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h3>Về Mandala INN</h3>
+          </li>
+          <li>
+            <a href="#">Về chúng tôi</a>
+          </li>
+          <li>
+            <a href="#">Hợp tác cùng chúng tôi</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h3>Đối tác</h3>
+          </li>
+          <li>
+            <a href="#">Đối tác thanh toán</a>
+          </li>
+          <li>
+            <a href="#">Chương trình đại lý</a>
+          </li>
+          <li>
+            <a href="#">Chương trình giao lưu</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h3>Điều khoản</h3>
+          </li>
+          <li>
+            <a href="#">Điều khoản sử dụng</a>
+          </li>
+          <li>
+            <a href="#">Quyền riêng tư</a>
+          </li>
+          <li>
+            <a href="#">Chính sách bảo mật</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h3>Tải ứng dụng</h3>
+          </li>
+          <li class="app">
+            <a href="#"><i class="fas fa-qrcode fa-2x"></i></a>
+            <a href="#"><i class="fab fa-apple fa-3x"></i></a>
+            <a href="#"><i class="fab fa-google-play fa-2x"></i></a>
+          </li>
+          <li>
+            <h3 class="mt-3">Kết nối với chúng tôi</h3>
+          </li>
+          <li>
+            <div class="social">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><img src="./img/zalo.png" alt="Mandala Zalo" /></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy-right text-center bg-copy-right">
+      <div class="container">
+        <p>
+          Copyright &copy; 2020 Mandala INN. All rights reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- js boostrap -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

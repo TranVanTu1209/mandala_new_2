@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+    integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/tablets.css" />
+  <link rel="stylesheet" href="./css/mobile.css" />
+  <link rel="icon" href="logo.ico" type="image/x-icon" />
+  <title>Chi tiết kết quả tìm kiếm khách sạn</title>
+</head>
+
+<body>
+  <!-- main header section -->
+  <header id="main-header" class="bg-header">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+          <img src="./img/logo.png" alt="Main logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars fa-2x text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="introduct_my_hotels.html">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a href="news_main.html" class="nav-link">
+                Tin tức
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="endow.html" class="nav-link">
+                Khuyến mại
+              </a>
+            </li>
+            <li>
+              <a href="contact_my_hotels.html" class="nav-link">Liên hệ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-globe"></i> Vietnamese
+              </a>
+              <div class="dropdown-menu bg-header" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Tiếng Anh</a>
+                <a class="dropdown-item" href="#">Tiếng Việt</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Ngôn ngữ khác</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="sign-in.html" class="nav-link"><i class="fas fa-users"></i> Đăng nhập</a>
+            </li>
+            <li class="nav-item">
+              <a href="sign-up.html" class="nav-link"><i class="fas fa-user-plus"></i> Đăng ký</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- SHOW CASE -->
+  <section id="showcase">
+    <div class="overlay">
+      <div class="container-fluid text-center">
+        <div class="hide-star">
+          <h1 class="mt-4">
+            CHUỖI KHÁCH SẠN NHƯỢNG QUYỀN HÀNG ĐẦU VIỆT NAM
+          </h1>
+          <p>
+            Hơn +10000 phòng khách sạn 5 sao chuẩn quốc tế
+          </p>
+        </div>
+
+        <!-- search bar -->
+        <div class="container">
+          <div class="search-bar">
+            <form class="row">
+              <div class="hide-star">
+                <input type="text" class="extra-small" id="place" placeholder="Nơi bạn muốn đến" />
+              </div>
+
+              <!-- time picker -->
+              <div class="hide-star">
+                <input type="text" name="daterange" style="cursor: pointer;" id="time-picker" class="time-picker"
+                  placeholder="Ngày nhận phòng" />
+              </div>
+
+              <!-- amount picker -->
+              <div class="amount-form hide-star">
+                <button type="button" class="bg-white" style="cursor: pointer;" data-toggle="modal"
+                  data-target="#amount-choice">
+                  1 phòng, 1 người lớn, 1 trẻ em <i class="fas fa-sort"></i>
+                </button>
+              </div>
+              <div class="room-type-form">
+                <p>
+                  <button class="" id="star" aria-expanded="false" aria-controls="collapseExample">
+                    Khách sạn 5 sao <i class="fas fa-star text-warning"></i>
+                  </button>
+                </p>
+                <div class="text-dark text-left" id="star-tab">
+                  <div class="card card-body">
+                    <div class="custom-control custom-checkbox mb-2">
+                      <input type="checkbox" class="custom-control-input" id="5_star" name="">
+                      <label class="custom-control-label text-warning" for="5_star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </label>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-2">
+                      <input type="checkbox" class="custom-control-input" id="4_star" name="">
+                      <label class="custom-control-label text-warning" for="4_star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                      </label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="3_star" name="">
+                      <label class="custom-control-label text-warning" for="3_star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide-star">
+                <button type="submit">Tìm kiếm <i class="fas fa-search ml-2"></i></button>
+              </div>
+            </form>
+            <div class="search-result-notification hide-star">
+              <p class="text-left mt-3 d-none">
+                Có 169 Khách sạn có phòng theo ngày đã chọn
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--amount people choice modal modal -->
+
+  <div class="modal fade" id="amount-choice" tabindex="-1" role="dialog" aria-labelledby="ModalLabelAmountRoom"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content text-center">
+        <div class="modal-body">
+          <form action="">
+            <p class="text-center font-weight-bold">Số phòng</p>
+            <!--  -->
+            <div class="input-group mb-3 room-amount-choice form-group form-inline">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-plus-circle text-success fa-2x plus-amount"></i></span>
+              </div>
+              <input value="1" type="number" name="" min="1" id="room-amount" class="form-control room-input" />
+
+              <div class="input-group-append">
+                <span class="input-group-text"><i
+                    class="fas fa-minus-circle fa-2x text-success minus-amount"></i></span>
+              </div>
+            </div>
+
+            <!--  -->
+            <p class="text-center font-weight-bold">Người lớn</p>
+            <div class="input-group mb-3 adult-amount-choice form-group form-inline">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-plus-circle text-success fa-2x plus-amount"></i></span>
+              </div>
+              <input value="1" type="number" name="" min="1" id="adult-amount" class="form-control adult-input" />
+
+              <div class="input-group-append">
+                <span class="input-group-text"><i
+                    class="fas fa-minus-circle fa-2x text-success minus-amount"></i></span>
+              </div>
+            </div>
+            <!--  -->
+            <p class="text-center font-weight-bold">Trẻ em</p>
+            <div class="input-group mb-3 child-amount-choice form-group form-inline">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-plus-circle text-success fa-2x plus-amount"></i></span>
+              </div>
+              <input value="1" type="number" name="" min="1" id="child-amount" class="form-control child-input" />
+
+              <div class="input-group-append">
+                <span class="input-group-text"><i
+                    class="fas fa-minus-circle fa-2x text-success minus-amount"></i></span>
+              </div>
+            </div>
+            <!--  -->
+            <input type="submit" value="Lựa chọn"
+              class="cursor-pointer border text-primary border-primary rounded p-2 px-5" data-dismiss="modal" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- extra menu -->
+  <div id="extra-breadcrumb-menu" class="extra-menu py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb small">
+          <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+          <li class="breadcrumb-item">
+            <a href="index.html">Khách sạn Việt Nam
+              <span class="viet-nam-hotel-amount">(55.547)</span></a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">Khách sạn Hà Nội (8.073)</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Golden Sun Palace Hotel
+          </li>
+        </ol>
+      </nav>
+      <div class="pb-4">
+        <a href="#" class="small logo-color">Xem tất cả 8073 khách sạn tại Hà Nội</a>
+      </div>
+    </div>
+  </div>
+  <!-- detail hotel results -->
+  <main id="hotel-search-result" class="my-3">
+    <div class="container">
+      <!-- info -->
+      <div class="hotel-info">
+        <div class="row">
+          <div class="col-lg-6 py-2">
+            <div class="d-flex ">
+              <p class="hotel-status p-1 px-3 bg-red rounded d-inline-block">
+                Đang bán chạy
+              </p>
+              <p class="ml-4">
+                <span class="push-heart"><i class="far fa-heart fa-2x"></i></span>
+                <span class="push-heart"><i class="fas fa-heart fa-2x"></i></span>
+                <span class="fly-heart"><i class="fas fa-heart fa-2x text-red"></i></span>
+              </p>
+            </div>
+            <h5 class="hotel-name font-weight-bold">
+              <a href="#">Khách Sạn và Spa Charm Hà Nội (Hanoi Charm Hotel and Spa)</a>
+            </h5>
+            <div class="rating text-warning">
+              <i class="fas fa-star fa-2x"></i>
+              <i class="fas fa-star fa-2x"></i>
+              <i class="fas fa-star fa-2x"></i>
+              <i class="fas fa-star fa-2x"></i>
+            </div>
+            <div class="address">
+              <p class="small py-2">
+                1B phố Tố Tịch, phường Hàng Gai, quận Hoàn Kiếm, Hà Nội, Phố
+                Cổ, Hà Nội, Việt Nam, 70000
+                <a href="#">Xem trên bản đồ</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 py-2">
+            <div class="d-flex">
+              <div class="rating-number bg-success vast-right d-inline-block rounded mr-3">
+                <h5 class="font-weight-bold p-3 text-white">8.9</h5>
+              </div>
+              <div class="rating-type">
+                <p>Tuyệt vời</p>
+                <p>
+                  /10( <span class="total-rating text-success">599</span> bài
+                  đánh giá)
+                </p>
+              </div>
+            </div>
+            <div class="give-heart">
+              <span class="push-heart"><i class="far fa-heart fa-2x"></i></span>
+              <span class="push-heart"><i class="fas fa-heart fa-2x"></i></span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 py-2 rank-info">
+            <div class="d-flex p-3 bg-skyblue px-2 align-items-center d-inline-block">
+              <img src="./img/medal.png" alt="Mandala Search Result" />
+              <p class="small">
+                <span class="text-success">
+                  Được xếp hạng 501
+                </span>
+                trong số 8.070 chỗ nghỉ tại Hà Nội đối với du khách
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- img hotel -->
+    </div>
+  </main>
+  <div id="result-hotel-imgs" class="py-4">
+    <div class="search-result-carousel carousel slide py-3" data-ride="carousel">
+      <!-- The slideshow -->
+      <div class="owl-carousel owl-theme">
+        <!-- row 1 -->
+        <!-- hotel 1 -->
+        <div class="item">
+          <div class="card">
+            <a href="#">
+              <img class="card-img-top" src="./img/combo_deal_1.png" alt="Hotel Mandala" />
+            </a>
+          </div>
+        </div>
+        <!-- hotel 2 -->
+        <div class="item">
+          <div class="card">
+            <img class="card-img-top" src="./img/combo_deal_2.png" alt="Hotel Mandala" />
+          </div>
+        </div>
+        <!-- hotel 3 -->
+        <div class="item">
+          <div class="card">
+            <img class="card-img-top" src="./img/combo_deal_3.png" alt="Hotel Mandala" />
+          </div>
+        </div>
+
+        <!-- end -->
+        <!-- row 2 -->
+        <!-- hotel 4 -->
+        <div class="item">
+          <div class="card">
+            <a href="#">
+              <img class="card-img-top" src="./img/combo_3.jpg" alt="Hotel Mandala" />
+            </a>
+          </div>
+        </div>
+        <!-- hotel 5 -->
+        <div class="item">
+          <div class="card">
+            <img class="card-img-top" src="./img/combo_2.jpg" alt="Hotel Mandala" />
+          </div>
+        </div>
+        <!-- hotel 6 -->
+        <div class="item">
+          <div class="card">
+            <img class="card-img-top" src="./img/combo_1.jpg" alt="Hotel Mandala" />
+          </div>
+        </div>
+
+        <!-- end -->
+        <!-- row 3 -->
+
+        <!-- hotel 7 -->
+        <div class="item">
+          <div class="card">
+            <a href="#">
+              <img class="card-img-top" src="./img/combo_4.jpg" alt="Hotel Mandala" />
+            </a>
+          </div>
+        </div>
+        <!-- hotel 8 -->
+        <div class="item">
+          <div class="card">
+            <img class="card-img-top" src="./img/combo_5.jpg" alt="Hotel Mandala" />
+          </div>
+        </div>
+        <!-- hotel 9 -->
+        <div class="item">
+          <div class="card">
+            <img class="card-img-top" src="./img/combo_6.jpg" alt="Hotel Mandala" />
+          </div>
+        </div>
+
+        <!-- end -->
+      </div>
+    </div>
+    <button class="explore-hotel" data-toggle="modal" data-target="#explore-hotel">
+      <i class="fas fa-th-list"></i> Khám phá khách sạn
+    </button>
+    <!-- The Modal -->
+
+    <div class="modal fade" id="explore-hotel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title"></h4>
+            <button type="button" class="close text-white large" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body mt-2">
+            <div class="main-info">
+              <div class="row">
+                <div class="col-md-6">
+                  <!-- slide show -->
+                  <div id="desrination-hotel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                      <li data-target="#desrination-hotel" data-slide-to="0" class="active"></li>
+                      <li data-target="#desrination-hotel" data-slide-to="1"></li>
+                      <li data-target="#desrination-hotel" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <a href="#">
+                          <img src="./img/explore_1.png" class="m-auto d-block w-100" alt="Charm Botique Hotel" /></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="#">
+                          <img src="./img/explore_2.png" class="m-auto d-block w-100" alt="Charm Botique Hotel" /></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="#">
+                          <img src="./img/explore_3.png" class="m-auto d-block w-100" alt="Charm Botique Hotel" /></a>
+                      </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#desrination-hotel" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#desrination-hotel" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                  <div class="hotel-info">
+                    <h5 class="name font-weight-bold mt-3">
+                      Khách Sạn Golden Charm Hà Nội (Hanoi Golden Charm Hotel)
+                    </h5>
+                    <p class="small py-1">
+                      <span class="text-warning">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="address text-primary">
+                        <i class="fas fa-check-mark-alt"></i> 24 Hang Quat
+                        Street,Hoan Kiem - Xem trên bản đồ
+                      </span>
+                    </p>
+                    <p class="bg-red p-1 px-3 rounded d-inline-block">
+                      GIẢM 75% HÔM NAY
+                    </p>
+                    <p class="small">Giá mỗi đêm rẻ nhất từ</p>
+                    <p class="font-weight-bold line-through real-price">
+                      2.308.475đ
+                    </p>
+                    <h4 class="font-weight-bold sales-price text-red">
+                      308.475đ
+                    </h4>
+                    <a href="#" class="bg-info p-2 px-4 rounded text-white mt-2 d-inline-block text-uppercase">Xem các
+                      phòng còn trống</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="footer">
+            <div class="imgs-album">
+              <div class="nav-sort">
+                <ul>
+                  <li>
+                    <a href="#" class="active">Tất cả</a>
+                  </li>
+                  <li>
+                    <a href="#">Phòng (12)</a>
+                  </li>
+                  <li>
+                    <a href="#">Khách sạn (20)</a>
+                  </li>
+                  <li>
+                    <a href="#">Tiện nghi (21)</a>
+                  </li>
+                  <li>
+                    <a href="#">Ăn uống (30)</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="album">
+                <img src="./img/explore_4.jpg" alt="Charm Botique Hotel Img" />
+                <img src="./img/explore_4.jpg" alt="Charm Botique Hotel Img" />
+                <img src="./img/explore_4.jpg" alt="Charm Botique Hotel Img" />
+                <img src="./img/explore_4.jpg" alt="Charm Botique Hotel Img" />
+                <img src="./img/explore_4.jpg" alt="Charm Botique Hotel Img" />
+                <img src="./img/explore_4.jpg" alt="Charm Botique Hotel Img" />
+                <img src="./img/explore_4.jpg" alt="Charm Botique Hotel Img" />
+                <img src="./img/explore_4.jpg" alt="Charm Botique Hotel Img" />
+                <img src="./img/explore_4.jpg" alt="Charm Botique Hotel Img" />
+                <img src="./img/explore_4.jpg" alt="Charm Botique Hotel Img" />
+                <img src="./img/explore_4.jpg" alt="Charm Botique Hotel Img" />
+                <img src="./img/explore_4.jpg" alt="Charm Botique Hotel Img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+  </div>
+
+  <!--extra suggesttions hotel  -->
+  <section id="same-hotels" class="py-3">
+    <div class="container">
+      <h4 class="font-weight-bold">
+        6 loại phòng và tổng cộng 11 lựa chọn
+      </h4>
+      <p class="small text-secondary">
+        *Giá không bao gồm thuế & phí
+      </p>
+      <!-- list result suggestion rooms -->
+      <div class="list-rooms py-3">
+        <!-- room 1 -->
+        <div class="room row my-3">
+          <div class="col-lg-4 col-md-6 bg-extra-light p-3">
+            <div class="room-type">
+              <div class="card  bg-extra-light">
+                <div class="card-title">
+                  <h4>Loại phòng</h4>
+                </div>
+                <a href="#">
+                  <img class="card-img-top" src="./img/combo_deal_1.png" alt="Hotel Mandala" />
+                </a>
+                <div class="card-body">
+                  <div class="d-flex extra-img">
+                    <div class="col-sm-4">
+                      <a href="#">
+                        <img src="./img/sg_bed_1.png" class="d-block" alt="Mandala Hotel Result" /></a>
+                    </div>
+                    <div class="col-sm-4">
+                      <a href="#">
+                        <img src="./img/sg_bed_2.png" class="d-block" alt="Mandala Hotel Result" /></a>
+                    </div>
+                    <div class="col-sm-4">
+                      <a href="#">
+                        <img src="./img/sg_bed_2.png" class="d-block" alt="Mandala Hotel Result" /></a>
+                    </div>
+                  </div>
+                  <a href="#" class="d-block p-2">
+                    Xem ảnh chi tiết
+                  </a>
+                  <div class="hotel-furniture p-2">
+                    <ul>
+                      <li class="py-1 small">
+                        <i class="fas fa-bed"></i> 1 giường đôi
+                      </li>
+                      <li class="py-1 small">
+                        <i class="fas fa-hotel"></i> Diện tích phòng: 25m2
+                      </li>
+                      <li class="py-1 small">
+                        <i class="fas fa-shower"></i> Bồn tắm
+                      </li>
+                      <li class="py-1 small">
+                        <i class="fas fa-users"></i> 2 người lớn - 2 trẻ em
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 p-3 pl-4">
+            <div class="room-utilities">
+              <div class="card">
+                <div class="card-title">
+                  <h4>Giá này đã bao gồm</h4>
+                </div>
+
+                <div class="card-body">
+                  <!-- utilities -->
+                  <div class="benefits p-2">
+                    <p class="font-weight-bold">
+                      Lợi ích
+                    </p>
+                    <ul>
+                      <li class="py-2">
+                        <i class="fas fa-check text-success"></i> Bữa sáng cho
+                        02 người
+                      </li>
+                      <li class="py-2">
+                        <i class="fas fa-check text-success"></i> Không phải
+                        thanh toán ngay
+                      </li>
+                      <li class="small time-payment ml-3">
+                        - Chỉ thanh toán vào 28 Tháng Hai 2020
+                      </li>
+                      <li class="py-2">
+                        <i class="fas fa-check text-success"></i> Wifi miễn
+                        phí
+                      </li>
+                      <li class="py-2">
+                        <i class="fas fa-check text-success"></i> Miễn phí hủy
+                        phòng trước
+                        <span class="cancel-room small">
+                          01 Tháng Ba 2020
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- sales notifications -->
+                  <div class="sales-notification">
+                    <p class="font-weight-bold">
+                      Giảm giá
+                    </p>
+                    <p class="text-danger">
+                      <i class="fas fa-bolt"></i> Ưu đãi Chớp nhoáng
+                    </p>
+                    <p class="text-danger small">
+                      Khuyến mãi 72 giờ. Giá phòng đã có giảm giá 45%!
+                    </p>
+                  </div>
+                  <!-- amount room -->
+                  <div class="py-2 amount-room">
+                    <p class="font-weight-bold">
+                      Số lượng
+                    </p>
+                    <select name="room-amount" id="room-amount" class="form-control d-block w-50">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 p-3 text-right room-price">
+            <div class="inner">
+              <div class="card">
+                <div class="card-title">
+                  <h4>Giá phòng / Đêm</h4>
+                </div>
+
+                <div class="card-body mt-3">
+                  <!-- utilities -->
+                  <p class="bg-red text-white p-1 px-3 rounded d-inline-block">
+                    GIẢM <span class="amount-sale">75%</span> HÔM NAY
+                  </p>
+                  <p class="text-secondary small">
+                    Giá mỗi đêm rẻ nhất từ
+                  </p>
+                  <div class="real-price">
+                    <span class="price text-secondary large font-weight-bold">
+                      2.308.475đ
+                    </span>
+                  </div>
+                  <h4 class="sale-price text-danger font-weight-bold large py-2">
+                    308.475đ
+                  </h4>
+                  <a href="#" class="text-success">Hủy miễn phí</a>
+                </div>
+              </div>
+            </div>
+            <div class="book-room py-3">
+              <a href="#" class="bg-info text-white p-2 px-5 rounded d-inline-block">Đặt phòng</a>
+              <p class="text-danger font-weight-bold mt-3">
+                Còn lại 02 Phòng
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- room 2 -->
+      </div>
+    </div>
+  </section>
+  <!-- golden charm hotel -->
+  <section id="experience-travel" class="py-3">
+    <div class="container">
+      <div class="banner-experience">
+        <div class="overlay">
+          <div class="text text-white">
+            <h3>Kinh nghiệm du lịch</h3>
+            <h5>
+              <a href="#" class="text-white">Khách sạn & Spa Charm Hà Nội</a>
+            </h5>
+          </div>
+          <div class="view-hotel">
+            <a href="#" class="text-white border border-white rounded p-1 px-3">Xem các phòng còn trống</a>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="description py-4">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="font-weight-bold">
+              Mô tả
+            </h5>
+          </div>
+          <div class="col-md-8 text-description small">
+            <div class="text">
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet
+              </p>
+
+              <div class="hidden-text">
+                <p>
+                  clita kasd gubergren, no sea takimata sanctus est Lorem
+                  ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                  sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat, sed diam voluptua. At
+                  vero eos et accusam et justo duo dolores et ea rebum. Stet
+                  clita kasd gubergren, no sea takimata sanctus est Lorem
+                  ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Necessitatibus omnis quam reiciendis velit
+                  facilis inventore sint, unde nihil ratione, expedita
+                  cupiditate vitae nostrum voluptatibus. Ipsam voluptatem
+                  deserunt quaerat aperiam ab molestias. Ipsum, aliquam, quia
+                  iusto numquam, eius architecto omnis dicta libero veniam est
+                  quibusdam impedit totam quae odit. Sequi, earum?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                  ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                  nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+            </div>
+
+            <div class="control-text">
+              <button class="border-0 text-primary mr-4 bg-white d-none hide-text">
+                Ẩn bớt <i class="fas fa-arrow-up"></i>
+              </button>
+              <button class="border-0 text-primary bg-white show-text">
+                Xem thêm <i class="fas fa-arrow-down"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+  </section>
+  <!-- equipments section -->
+  <section id="equipment" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="font-weight-bold">
+            Cơ sở vật chất
+          </h5>
+        </div>
+        <div class="col-md-8">
+          <!-- vehicle utilities -->
+          <div class="vehicle utilities">
+            <h5 class="font-weight-bold">
+              Phương tiện đi lại
+            </h5>
+            <ul>
+              <li><i class="fas fa-check"></i> Dịch vụ Taxi</li>
+              <li><i class="fas fa-check"></i> Đưa đón sân bay</li>
+              <li><i class="fas fa-check"></i> Dịch vụ đưa đón</li>
+            </ul>
+          </div>
+          <!-- internet utilities -->
+          <div class="internet utilities py-3">
+            <h5 class="font-weight-bold">
+              Internet
+            </h5>
+            <ul>
+              <li>
+                <i class="fas fa-check"></i> Miễn phí Wifi ở tất cả khu vực
+              </li>
+            </ul>
+          </div>
+          <!-- language utilities -->
+          <div class="language utilities py-3">
+            <h5 class="font-weight-bold">
+              Ngôn ngữ
+            </h5>
+            <ul>
+              <li><i class="fas fa-check"></i> Tiếng Việt</li>
+              <li><i class="fas fa-check"></i> Tiếng Anh</li>
+              <li><i class="fas fa-check"></i> Tiếng Trung</li>
+            </ul>
+          </div>
+          <!--receptionist  utilities -->
+          <div class="receptionist utilities py-3">
+            <h5 class="font-weight-bold">
+              Dịch vụ lễ tân
+            </h5>
+            <ul>
+              <li><i class="fas fa-check"></i> Lễ tân 24 giờ</li>
+              <li><i class="fas fa-check"></i> An ninh 24 giờ</li>
+              <li>
+                <i class="fas fa-check"></i> Dịch vụ Nhận/ Trả phòng nhanh
+              </li>
+              <li><i class="fas fa-check"></i> Dịch vụ đặt vé</li>
+              <li><i class="fas fa-check"></i> Dịch vụ hướng dẫn khách</li>
+              <li>
+                <i class="fas fa-check"></i> Dịch vụ Nhận/ Trả phòng nhanh
+              </li>
+              <li><i class="fas fa-check"></i> Nhận/ Trả phòng riêng</li>
+              <li><i class="fas fa-check"></i> Dịch vụ báo thức</li>
+            </ul>
+          </div>
+          <!--clean  utilities -->
+          <div class="clean utilities py-3">
+            <h5 class="font-weight-bold">
+              Dịch vụ lau dọn
+            </h5>
+            <ul>
+              <li><i class="fas fa-check"></i> Dịch vụ lau dọn</li>
+              <li><i class="fas fa-check"></i> Phục vụ hàng ngày</li>
+              <li><i class="fas fa-check"></i> Dịch vụ giặt ủi</li>
+              <li><i class="fas fa-check"></i> Dịch vụ ủi (là đồ)</li>
+              <li><i class="fas fa-check"></i> Giặt khô</li>
+            </ul>
+          </div>
+          <!--clean  utilities -->
+          <div class="others utilities py-3">
+            <h5 class="font-weight-bold">
+              Dịch vụ khác
+            </h5>
+            <ul>
+              <li><i class="fas fa-check"></i> Phòng cách âm</li>
+              <li><i class="fas fa-check"></i> Phòng hút thuốc</li>
+              <li><i class="fas fa-check"></i> Máy điều hòa</li>
+              <li><i class="fas fa-check"></i> Phòng không hút thuốc</li>
+            </ul>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+      <hr />
+    </div>
+  </section>
+  <!--  -->
+  <!-- policy hotel section -->
+  <section id="policies" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="font-weight-bold">
+            Chính sách khách hàng
+          </h5>
+        </div>
+        <div class="col-md-8">
+          <!--  -->
+          <div class="title">
+            <h5 class="font-weight-bold">
+              Trẻ em và giường phụ
+            </h5>
+            <p class="text-success small">
+              Tất cả trẻ em đều được chào đón.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 py-3">
+              <h6 class="font-weight-bold bg-skyblue p-3">
+                Độ tuổi của khách
+              </h6>
+              <ul class="mt-5">
+                <li class="py-2 small">
+                  <i class="fas fa-walking fa-2x"></i> Trẻ em 0-5 tuổi [bao
+                  gồm cả bé 5 tuổi]
+                </li>
+                <li class="py-2 small">
+                  <i class="fas fa-blind fa-2x"></i> Những khách từ 6 tuổi trở
+                  lên tính là người lớn
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 py-3">
+              <h6 class="font-weight-bold bg-skyblue p-3">
+                Giường phụ
+              </h6>
+              <p class="font-weight-bold">
+                Phải sử dụng giường phụ
+              </p>
+              <ul>
+                <li class="small py-2">
+                  Vui lòng liên hệ trực tiếp với nơi lưu trú cho yêu cầu thêm
+                  giường phụ, có thể tính phí
+                </li>
+                <li class="small py-2">
+                  Vui lòng liên hệ trực tiếp với nơi lưu trú cho yêu cầu thêm
+                  giường phụ, có thể tính phí
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--other requirements  -->
+          <div class="other-requirements">
+            <h5 class="font-weight-bold">
+              Quy định khác
+            </h5>
+            <p class="small">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500s, when an unknown printer took a galley
+              of type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+      <hr />
+    </div>
+  </section>
+  <!--neccessary section  -->
+  <section id="neccessary" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="font-weight-bold">
+            Thông tin cần biết
+          </h5>
+        </div>
+        <div class="col-md-8">
+          <!-- time get room passed room -->
+          <div class="title">
+            <h5 class="font-weight-bold">
+              Nhận phòng/ Trả phòng
+            </h5>
+          </div>
+          <div class="time py-3">
+            <p>
+              Nhận phòng từ :
+              <span class="get-time font-weight-bold">
+                14:00:00
+              </span>
+            </p>
+            <p>
+              Trả phòng đến: :
+              <span class="pass-time font-weight-bold">
+                24:00:00
+              </span>
+            </p>
+          </div>
+          <div class="cancel-room">
+            <p class="text-danger">
+              Hủy đặt phòng/Trả trước
+            </p>
+            <p class="small">
+              Các loại phòng khác nhau có thể có chính sách hủy đặt phòng và
+              chính sách thanh toán trước khác nhau. Vui lòng kiểm tra chi
+              tiết chính sách phòng khi chọn phòng ở phía trên
+            </p>
+          </div>
+
+          <!--  -->
+        </div>
+      </div>
+      <hr />
+    </div>
+  </section>
+  <section class="view-empty-room py-3">
+    <div class="container">
+      <div class="inner w-30 m-auto">
+        <a href="#" class="btn bg-primary p-1 px-3 rounded text-white">Xem các phòng còn trống</a>
+      </div>
+    </div>
+  </section>
+  <!--guests comments  -->
+  <section id="comments-guest" class="py-4">
+    <div class="container">
+      <!-- post 1 -->
+      <div class="post row mr-2 py-2">
+        <div class="col-lg-3 col-md-6">
+          <div class="d-flex">
+            <div class="vast-right">
+              <p class="bg-info p-3 rounded font-weight-bold text-white">
+                8.4
+              </p>
+            </div>
+            <p class="text-primary ml-2 mt-2">
+              Trên cả tuyệt vời
+            </p>
+          </div>
+          <p class="font-weight-bold">
+            <i class="fas fa-user text-info"></i> Trần Văn Tú
+          </p>
+          <p class="small mt-3">
+            Đã ở <span class="amount">2</span> đêm vào
+            <span class="date">Tháng Mười Một 2019</span>
+          </p>
+        </div>
+        <div class="col-lg-9 col-md-6 bg-extra-light rounded p-3">
+          <h4 class="title">
+            “Chắc chắn quay lại khi ra Hà Nội công tác”
+          </h4>
+          <p class="text small py-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.
+          </p>
+
+          <p class="small text-secondary">
+            Đã nhận xét vào Tháng Mười Một 2018
+          </p>
+        </div>
+      </div>
+      <hr />
+      <!-- post 2 -->
+      <div class="post row mr-2 py-2">
+        <div class="col-lg-3 col-md-6">
+          <div class="d-flex">
+            <div class="vast-right">
+              <p class="bg-info p-3 rounded font-weight-bold text-white">
+                8.4
+              </p>
+            </div>
+            <p class="text-primary ml-2 mt-2">
+              Trên cả tuyệt vời
+            </p>
+          </div>
+          <p class="font-weight-bold">
+            <i class="fas fa-user text-info"></i> Trần Văn Tú
+          </p>
+          <p class="small mt-3">
+            Đã ở <span class="amount">2</span> đêm vào
+            <span class="date">Tháng Mười Một 2019</span>
+          </p>
+        </div>
+        <div class="col-lg-9 col-md-6 bg-extra-light rounded p-3">
+          <h4 class="title">
+            “Chắc chắn quay lại khi ra Hà Nội công tác”
+          </h4>
+          <p class="text small py-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.
+          </p>
+
+          <p class="small text-secondary">
+            Đã nhận xét vào Tháng Mười Một 2018
+          </p>
+        </div>
+      </div>
+      <nav aria-label="Page navigation comments" class="py-5">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#">Trang trước</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">...</a></li>
+          <li class="page-item"><a class="page-link" href="#">30</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Trang sau</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <!-- map to hotel section -->
+  <section id="map-hotel" class="my-3">
+    <div id="map-to-hotel"></div>
+  </section>
+  <!-- equal hotel -->
+  <section id="equal-hotels" class="py-4">
+    <div class="container">
+      <h5 class="font-weight-bold py-2">
+        Những khách sạn tương tự
+      </h5>
+      <div class="list-hotels row">
+        <!-- hotel 1 -->
+        <div class="hotel col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <a href="#"><img class="card-img-top" src="./img/equal_hotel.png" alt="Golden charm hotel" /></a>
+
+            <div class="card-body">
+              <h6 class="card-title font-weight-bold">
+                <a href="#" class="text-dark">
+                  Khách Sạn Golden Charm Hà Nội (Hanoi Golden Charm Hotel)</a>
+              </h6>
+              <p class="rating text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </p>
+              <a href="#" class="small"><i class="fas fa-search-location"></i> 24 Hang Quat
+                Street,Hoan Kiem - Xem trên bản đồ</a>
+              <div class="price py-2">
+                <p class="bg-red text-white font-weight-bold p-1 px-3 d-inline-block rounded card-sales">
+                  GIẢM GIÁ
+                  <span class="amount-sales">
+                    75%
+                  </span>
+                </p>
+                <p class="line-through real-price text-secondary">
+                  2.547.688đ
+                </p>
+                <h4 class="sale-price text-red font-weight-bold">
+                  547.688đ
+                </h4>
+              </div>
+            </div>
+            <div class="rating-number">
+              <p class="bg-success p-2 d-inline-block rounded font-weight-bold text-white vast-left">
+                8.4
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hotel col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <a href="#"><img class="card-img-top" src="./img/equal_hotel.png" alt="Golden charm hotel" /></a>
+
+            <div class="card-body">
+              <h6 class="card-title font-weight-bold">
+                <a href="#" class="text-dark">
+                  Khách Sạn Golden Charm Hà Nội (Hanoi Golden Charm Hotel)</a>
+              </h6>
+              <p class="rating text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </p>
+              <a href="#" class="small"><i class="fas fa-search-location"></i> 24 Hang Quat
+                Street,Hoan Kiem - Xem trên bản đồ</a>
+              <div class="price py-2">
+                <p class="bg-red text-white font-weight-bold p-1 px-3 d-inline-block rounded card-sales">
+                  GIẢM GIÁ
+                  <span class="amount-sales">
+                    75%
+                  </span>
+                </p>
+                <p class="line-through real-price text-secondary">
+                  2.547.688đ
+                </p>
+                <h4 class="sale-price text-red font-weight-bold">
+                  547.688đ
+                </h4>
+              </div>
+            </div>
+            <div class="rating-number">
+              <p class="bg-success p-2 d-inline-block rounded font-weight-bold text-white vast-left">
+                8.4
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="hotel col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <a href="#"><img class="card-img-top" src="./img/equal_hotel.png" alt="Golden charm hotel" /></a>
+
+            <div class="card-body">
+              <h6 class="card-title font-weight-bold">
+                <a href="#" class="text-dark">
+                  Khách Sạn Golden Charm Hà Nội (Hanoi Golden Charm Hotel)</a>
+              </h6>
+              <p class="rating text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </p>
+              <a href="#" class="small"><i class="fas fa-search-location"></i> 24 Hang Quat
+                Street,Hoan Kiem - Xem trên bản đồ</a>
+              <div class="price py-2">
+                <p class="bg-red text-white font-weight-bold p-1 px-3 d-inline-block rounded card-sales">
+                  GIẢM GIÁ
+                  <span class="amount-sales">
+                    75%
+                  </span>
+                </p>
+                <p class="line-through real-price text-secondary">
+                  2.547.688đ
+                </p>
+                <h4 class="sale-price text-red font-weight-bold">
+                  547.688đ
+                </h4>
+              </div>
+            </div>
+            <div class="rating-number">
+              <p class="bg-success p-2 d-inline-block rounded font-weight-bold text-white vast-left">
+                8.4
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="hotel col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <a href="#"><img class="card-img-top" src="./img/equal_hotel.png" alt="Golden charm hotel" /></a>
+
+            <div class="card-body">
+              <h6 class="card-title font-weight-bold">
+                <a href="#" class="text-dark">
+                  Khách Sạn Golden Charm Hà Nội (Hanoi Golden Charm Hotel)</a>
+              </h6>
+              <p class="rating text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </p>
+              <a href="#" class="small"><i class="fas fa-search-location"></i> 24 Hang Quat
+                Street,Hoan Kiem - Xem trên bản đồ</a>
+              <div class="price py-2">
+                <p class="bg-red text-white font-weight-bold p-1 px-3 d-inline-block rounded card-sales">
+                  GIẢM GIÁ
+                  <span class="amount-sales">
+                    75%
+                  </span>
+                </p>
+                <p class="line-through real-price text-secondary">
+                  2.547.688đ
+                </p>
+                <h4 class="sale-price text-red font-weight-bold">
+                  547.688đ
+                </h4>
+              </div>
+            </div>
+            <div class="rating-number">
+              <p class="bg-success p-2 d-inline-block rounded font-weight-bold text-white vast-left">
+                8.4
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <hr />
+    </div>
+  </section>
+  <!--  -->
+  <!-- viewed hotel -->
+  <section id="equal-hotels" class="viewed-hotels py-4">
+    <div class="container">
+      <h5 class="font-weight-bold py-2">
+        Những khách sạn bạn đã ghé thăm
+      </h5>
+      <div class="list-hotels row">
+        <!-- hotel 1 -->
+        <div class="hotel col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <a href="#"><img class="card-img-top" src="./img/equal_hotel.png" alt="Golden charm hotel" /></a>
+
+            <div class="card-body">
+              <h6 class="card-title font-weight-bold">
+                <a href="#" class="text-dark">
+                  Khách Sạn Golden Charm Hà Nội (Hanoi Golden Charm Hotel)</a>
+              </h6>
+              <p class="rating text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </p>
+              <a href="#" class="small"><i class="fas fa-search-location"></i> 24 Hang Quat
+                Street,Hoan Kiem - Xem trên bản đồ</a>
+              <div class="price py-2">
+                <p class="bg-red text-white font-weight-bold p-1 px-3 d-inline-block rounded card-sales">
+                  GIẢM GIÁ
+                  <span class="amount-sales">
+                    75%
+                  </span>
+                </p>
+                <p class="line-through real-price text-secondary">
+                  2.547.688đ
+                </p>
+                <h4 class="sale-price text-red font-weight-bold">
+                  547.688đ
+                </h4>
+              </div>
+            </div>
+            <div class="rating-number">
+              <p class="bg-success p-2 d-inline-block rounded font-weight-bold text-white vast-left">
+                8.4
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hotel col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <a href="#"><img class="card-img-top" src="./img/equal_hotel.png" alt="Golden charm hotel" /></a>
+
+            <div class="card-body">
+              <h6 class="card-title font-weight-bold">
+                <a href="#" class="text-dark">
+                  Khách Sạn Golden Charm Hà Nội (Hanoi Golden Charm Hotel)</a>
+              </h6>
+              <p class="rating text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </p>
+              <a href="#" class="small"><i class="fas fa-search-location"></i> 24 Hang Quat
+                Street,Hoan Kiem - Xem trên bản đồ</a>
+              <div class="price py-2">
+                <p class="bg-red text-white font-weight-bold p-1 px-3 d-inline-block rounded card-sales">
+                  GIẢM GIÁ
+                  <span class="amount-sales">
+                    75%
+                  </span>
+                </p>
+                <p class="line-through real-price text-secondary">
+                  2.547.688đ
+                </p>
+                <h4 class="sale-price text-red font-weight-bold">
+                  547.688đ
+                </h4>
+              </div>
+            </div>
+            <div class="rating-number">
+              <p class="bg-success p-2 d-inline-block rounded font-weight-bold text-white vast-left">
+                8.4
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="hotel col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <a href="#"><img class="card-img-top" src="./img/equal_hotel.png" alt="Golden charm hotel" /></a>
+
+            <div class="card-body">
+              <h6 class="card-title font-weight-bold">
+                <a href="#" class="text-dark">
+                  Khách Sạn Golden Charm Hà Nội (Hanoi Golden Charm Hotel)</a>
+              </h6>
+              <p class="rating text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </p>
+              <a href="#" class="small"><i class="fas fa-search-location"></i> 24 Hang Quat
+                Street,Hoan Kiem - Xem trên bản đồ</a>
+              <div class="price py-2">
+                <p class="bg-red text-white font-weight-bold p-1 px-3 d-inline-block rounded card-sales">
+                  GIẢM GIÁ
+                  <span class="amount-sales">
+                    75%
+                  </span>
+                </p>
+                <p class="line-through real-price text-secondary">
+                  2.547.688đ
+                </p>
+                <h4 class="sale-price text-red font-weight-bold">
+                  547.688đ
+                </h4>
+              </div>
+            </div>
+            <div class="rating-number">
+              <p class="bg-success p-2 d-inline-block rounded font-weight-bold text-white vast-left">
+                8.4
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="hotel col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <a href="#"><img class="card-img-top" src="./img/equal_hotel.png" alt="Golden charm hotel" /></a>
+
+            <div class="card-body">
+              <h6 class="card-title font-weight-bold">
+                <a href="#" class="text-dark">
+                  Khách Sạn Golden Charm Hà Nội (Hanoi Golden Charm Hotel)</a>
+              </h6>
+              <p class="rating text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </p>
+              <a href="#" class="small"><i class="fas fa-search-location"></i> 24 Hang Quat
+                Street,Hoan Kiem - Xem trên bản đồ</a>
+              <div class="price py-2">
+                <p class="bg-red text-white font-weight-bold p-1 px-3 d-inline-block rounded card-sales">
+                  GIẢM GIÁ
+                  <span class="amount-sales">
+                    75%
+                  </span>
+                </p>
+                <p class="line-through real-price text-secondary">
+                  2.547.688đ
+                </p>
+                <h4 class="sale-price text-red font-weight-bold">
+                  547.688đ
+                </h4>
+              </div>
+            </div>
+            <div class="rating-number">
+              <p class="bg-success p-2 d-inline-block rounded font-weight-bold text-white vast-left">
+                8.4
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="sign-up-bottom" class="text-white">
+    <div class="container py-2">
+      <div class="inner row">
+        <form class="form-inline col-lg-6">
+          <div class="form-group mb-2">
+            <input type="email" class="form-control" id="" placeholder="Nhập email..." />
+          </div>
+          <button type="submit" class="btn btn-logo mb-2">Đăng ký</button>
+        </form>
+        <div class="sign-up-endow col-lg-5 mt-2">
+          <h6 class="font-weight-bold">
+            Các deal giảm giá đến 60% sẽ được gửi đến inbox của bạn
+          </h6>
+          <p class="small">
+            Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản & Điều Kiện và
+            Chính Sách Bảo Mật của chúng tôi
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer main section -->
+  <footer id="main-footer" class="pt-5">
+    <div class="container">
+      <div class="boxes">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./img/logo.png" alt="logo bottom" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Trụ sở: Tầng 3 Grand Plza
+            </a>
+            <a class="small d-block">
+              117 Trần Duy Hưng, Q. Cầu Giấy, TP Hà Nội
+            </a>
+          </li>
+          <li class="py-1">
+            <a href="#">Tel: (84-4) 3555.8999</a>
+          </li>
+          <li>
+            <a href="#">
+              Email: contact@mandala.vn
+            </a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h3>Về Mandala INN</h3>
+          </li>
+          <li>
+            <a href="#">Về chúng tôi</a>
+          </li>
+          <li>
+            <a href="#">Hợp tác cùng chúng tôi</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h3>Đối tác</h3>
+          </li>
+          <li>
+            <a href="#">Đối tác thanh toán</a>
+          </li>
+          <li>
+            <a href="#">Chương trình đại lý</a>
+          </li>
+          <li>
+            <a href="#">Chương trình giao lưu</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h3>Điều khoản</h3>
+          </li>
+          <li>
+            <a href="#">Điều khoản sử dụng</a>
+          </li>
+          <li>
+            <a href="#">Quyền riêng tư</a>
+          </li>
+          <li>
+            <a href="#">Chính sách bảo mật</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+          <li>
+            <a href="#">Cơ hội nghề nghiệp</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h3>Tải ứng dụng</h3>
+          </li>
+          <li class="app">
+            <a href="#"><i class="fas fa-qrcode fa-2x"></i></a>
+            <a href="#"><i class="fab fa-apple fa-3x"></i></a>
+            <a href="#"><i class="fab fa-google-play fa-2x"></i></a>
+          </li>
+          <li>
+            <h3 class="mt-3">Kết nối với chúng tôi</h3>
+          </li>
+          <li>
+            <div class="social">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><img src="./img/zalo.png" alt="Mandala Zalo" /></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy-right text-center bg-copy-right">
+      <div class="container">
+        <p>
+          Copyright &copy; 2020 Mandala INN. All rights reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTiHs-9CvxY-PKay8O8MU55sNrSC3EflE&callback=initMap"
+    async defer></script>
+  <!-- AIzaSyAhUlmGwtv8wfUlIzAopM-w1Vk_CvYpquI -->
+  <script src="./js/map_api_hotel_detail.js"></script>
+  <script src="./js/date_picker_home.js"></script>
+  <script src="./js/plus_minus_amount.js"></script>
+  <script src="./js/home_combo_deal_owl_carousel.js"></script>
+  <script src="./js/show_text.js"></script>
+  <script src="./js/get_hotel_map.js"></script>
+  <script src="./js/slide_show_main_banner.js"></script>
+  <script src="./js/toggle_times.js"></script>
+  <script src="./js/fade_star_tab.js"></script>
+</body>
+
+</html>
